@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <p>Aspina</p>
+      <p>Merhaba</p>
     </>
   )
 }
