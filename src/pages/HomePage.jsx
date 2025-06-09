@@ -5,6 +5,7 @@ import ProductCards from "../layout/ProductCards"
 import ShopCards from "../layout/ShopCards"
 import ContainerFluid from "../layout/ContainerFluid"
 import DesktopBlog from "../layout/DesktopBlog"
+import Footer from "../layout/footer"
 
 function HomePage() {
 
@@ -19,6 +20,7 @@ function HomePage() {
         <Carousel2/>
         <ContainerFluid/>
         <DesktopBlog/>
+        <Footer/>
       </div>
     </div>
       
