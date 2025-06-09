@@ -1,4 +1,4 @@
-import Carousel1 from "../layout/carousel1"
+import Carousel1 from "../layout/Carousel1"
 import Carousel2 from "../layout/Carousel2"
 import Navbar from "../layout/Navbar"
 import ProductCards from "../layout/ProductCards"
