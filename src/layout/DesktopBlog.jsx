@@ -4,21 +4,21 @@ function DesktopBlog() {
 
 const cards=[
     {
-        img:"./public/pictures/street.jpg",
+        img:"./pictures/street.jpg",
         name:"Loudest à la Madison #1 (L'integral)",
         desc:"We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
         date:"09 June 2025",
         comments:"10 comments",
     },
     {
-        img:"./public/pictures/beetle.jpg",
+        img:"./pictures/beetle.jpg",
         name:"Loudest à la Madison #1 (L'integral)",
         desc:"We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
         date:"09 June 2025",
         comments:"10 comments",
     },
     {
-        img:"./public/pictures/umbrellas.jpg",
+        img:"./pictures/umbrellas.jpg",
         name:"Loudest à la Madison #1 (L'integral)",
         desc:"We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
         date:"09 June 2025",
@@ -54,13 +54,13 @@ const cards=[
                             <div className="w-[298px] h-[46px] flex items-center justify-between ">
 
                                 <div className="w-[110px] h-[16px] flex items-center justify-between gap-[5px]">
-                                    <img className="w-[16px] h-[16px] " src="./public/pictures/date.png" alt="#" />
+                                    <img className="w-[16px] h-[16px] " src="./pictures/date.png" alt="#" />
                                     <p className="w-[84px] h-[16px] font-montserrat font-[400] text-[12px] leading-[16px] tracking-[0.2px] text-[#737373]">
                                     {item.date}</p>
                                 </div>
                                
                                 <div className="w-[115px] h-[16px] flex items-center justify-between gap-[5px]">
-                                    <img className="w-[16px] h-[16px] " src="./public/pictures/comment.png" alt="#" />
+                                    <img className="w-[16px] h-[16px] " src="./pictures/comment.png" alt="#" />
                                     <p className="w-[84px] h-[16px] font-montserrat font-[400] text-[12px] leading-[16px] tracking-[0.2px] text-[#737373]">
                                         {item.comments}</p>
                                 </div>
@@ -69,7 +69,7 @@ const cards=[
                             
                             <div className="w-[104px] h-[24px] flex items-center justify-between gap-[10px]">
                                 <a className="w-[85px] h-[24px] no-underline font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]" href="#">Learn More </a>
-                                <img className="w-[8.62px] h-[16px] " src="./public/pictures/none.png" alt="#" />
+                                <img className="w-[8.62px] h-[16px] " src="./pictures/none.png" alt="#" />
                             </div>
                         </div>
                     </div>
