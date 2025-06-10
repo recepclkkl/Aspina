@@ -8,7 +8,7 @@ const slides = [
     titleBig: 'Vita Classic Product',
     description: 'We know how large objects will act, We know how are objects will act, We know',
     price:"$16.48",
-    img:"./src/pictures/whiteman.png"
+    img:"./public/pictures/whiteman.png"
     },
   {
     bgColor: '#5A2D82',
@@ -16,7 +16,7 @@ const slides = [
     titleBig: 'LIMITED EDITION',
     description: 'We know how large objects will act, We know how are objects will act, We know',
     price:"$18.99",
-    img:"./src/pictures/whiteman.png"
+    img:"./public/pictures/whiteman.png"
     },
 ];
 
@@ -91,7 +91,8 @@ function Carousel2() {
                     </h4>
                     <div className='flex items-center gap-[34px]'>
                         <p className="font-montserrat font-[700] text-[#FFFFFF] text-[24px] leading-[32px] tracking-[0.1px]">{slides[index].price}</p>
-                        <a href="#" className="flex justify-center no-underline visited:text-[#FFFFFF] items-center w-[221px] h-[62px] bg-[#2DC071] font-montserrat font-[700] text-[14px] leading-[22px] tracking-[0.2px] text-[#FFFFFF] border-none">
+                        <a href="#" className="flex justify-center no-underline visited:text-[#FFFFFF] 
+                        items-center w-[221px] h-[62px] bg-[#2DC071] font-montserrat font-[700] text-[14px] leading-[22px] tracking-[0.2px] text-[#FFFFFF] border-none">
                             SHOP NOW
                         </a>
                     </div>
@@ -107,10 +108,10 @@ function Carousel2() {
       {/* Geri / İleri Butonları */}
       <div className="absolute top-1/2 left-0 w-full flex justify-between items-center px-6 z-20">
         <button onClick={prevSlide} className="z-20 bg-transparent border-none">
-          <img src="./src/pictures/right.png" alt="Geri" />
+          <img src="../public/pictures/right.png" alt="Geri" />
         </button>
         <button onClick={nextSlide} className="z-20 bg-transparent border-none">
-          <img src="./src/pictures/left.png" alt="İleri" />
+          <img src="./public/pictures/left.png" alt="İleri" />
         </button>
       </div>
 

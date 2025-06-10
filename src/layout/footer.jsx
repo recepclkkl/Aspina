@@ -8,9 +8,9 @@ function Footer() {
             <div className="w-[1050px] h-[138px] flex items-center justify-between">
                 <p className="font-montserrat font-[700] text-[24px] leading-[32px] tracking-[0.1px] text-[#252B42]">Bandage</p>
                 <div className="w-[236px] h-[24px] flex gap-[20px] justify-center">
-                    <img src="./src/pictures/f.png" alt="" />
-                    <img src="./src/pictures/i.png" alt="" />
-                    <img src="./src/pictures/t.png" alt="" />
+                    <img src="./public/pictures/f.png" alt="" />
+                    <img src="./public/pictures/i.png" alt="" />
+                    <img src="./public/pictures/t.png" alt="" />
                 </div>
             </div>
         </div>

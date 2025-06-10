@@ -9,7 +9,7 @@ function containerFluid() {
         <div className="w-[1440px] h-[682px] flex gap-[30px] justify-end">
 
             <div className="w-[704px] h-[682px] relative overflow-hidden">
-                <img className=" relative object-cover top-[-90px] left-[-137px] w-[725px] h-[774px] object-cover" src="./src/pictures/reds.png" alt="" />
+                <img className=" relative object-cover top-[-90px] left-[-137px] w-[725px] h-[774px] object-cover" src="./public/pictures/reds.png" alt="" />
             </div>
 
             <div className="w-[573px] h-[682px] flex flex-col justify-center">

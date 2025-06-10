@@ -13,7 +13,7 @@ function ShopCards() {
 
                 <div className="w-[1050px] h-[500px] flex gap-[30px]">
                     <div className="w-[510px] h-[500px] relative">
-                        <img className="absolute w-full h-full object-cover" src="./src/pictures/man.jpg" alt="" />
+                        <img className="absolute w-full h-full object-cover" src="./public/pictures/man.jpg" alt="" />
                         <a href="#" className="absolute left-[31px] top-[426px] w-[170px] h-[48px] flex 
                             items-center justify-center no-underline font-montserrat font-[700] text-[16px] 
                             text-[#252B42] leading-[24px] tracking-[0.1px] visited:text-[#252B42] bg-[#FFFFFF] border-none cursor-pointer"
@@ -22,7 +22,7 @@ function ShopCards() {
                         </a>
                     </div>
                     <div className="w-[240px] h-[500px] relative">
-                        <img className="absolute w-full h-full object-cover" src="./src/pictures/women.jpg" alt="" />
+                        <img className="absolute w-full h-full object-cover" src="./public/pictures/women.jpg" alt="" />
                         <a href="#" className="absolute left-[21px] top-[426px] w-[136px] h-[48px] flex 
                             items-center justify-center no-underline font-montserrat font-[700] text-[16px] 
                             text-[#252B42] leading-[24px] tracking-[0.1px] visited:text-[#252B42] bg-[#FFFFFF] border-none cursor-pointer"
@@ -33,7 +33,7 @@ function ShopCards() {
 
                     <div className="w-[240px] h-[500px] flex flex-col gap-[16px]">
                         <div className="w-[240px] h-[242px] relative">
-                            <img className="absolute w-full h-full object-cover" src="./src/pictures/accessories.jpg" alt="" />
+                            <img className="absolute w-full h-full object-cover" src="./public/pictures/accessories.jpg" alt="" />
                             <a href="#" className="absolute left-[21px] top-[171px] w-[170px] h-[48px] flex 
                                 items-center justify-center no-underline font-montserrat font-[700] text-[16px] 
                                 text-[#252B42] leading-[24px] tracking-[0.1px] visited:text-[#252B42] bg-[#FFFFFF] border-none cursor-pointer"
@@ -43,7 +43,7 @@ function ShopCards() {
                         </div>
 
                         <div className="w-[240px] h-[242px] relative">
-                            <img className="absolute w-full h-full object-cover" src="./src/pictures/kids.jpg" alt="" />
+                            <img className="absolute w-full h-full object-cover" src="./public/pictures/kids.jpg" alt="" />
                             <a href="#" className="absolute left-[21px] top-[171px] w-[120px] h-[48px] flex 
                                 items-center justify-center no-underline font-montserrat font-[700] text-[16px] 
                                 text-[#252B42] leading-[24px] tracking-[0.1px] visited:text-[#252B42] bg-[#FFFFFF] border-none cursor-pointer"

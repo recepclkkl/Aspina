@@ -28,7 +28,7 @@ useEffect(() => {
                    <a
                     href="tel:2255550118"
                     className=" font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#FFFFFF] no-underline hover:text-gray-200 flex items-center gap-[5px]">
-                    <img className="w-[16px] h-[16px]" src="./src/pictures/phone-icon.png" alt="phone"/>
+                    <img className="w-[16px] h-[16px]" src="./public/pictures/phone-icon.png" alt="phone"/>
                     (225) 555-0118
                   </a>
                 </address>
@@ -36,7 +36,7 @@ useEffect(() => {
                   <a
                     href="mailto:michelle.rivera@example.com"
                     className="font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#FFFFFF] no-underline hover:text-gray-200 flex items-center gap-[5px]">
-                    <img className="w-[16px] h-[16px]" src="./src/pictures/mail-icon.png" alt="mail"/>
+                    <img className="w-[16px] h-[16px]" src="./public/pictures/mail-icon.png" alt="mail"/>
                     michelle.rivera@example.com
                   </a>
                 </address>
@@ -51,10 +51,10 @@ useEffect(() => {
               <div className=" w-[233px] h-[58px] flex gap-[10px] justify-center items-center">
                   <p className="w-[83px] h-[24px] text-[#FFFFFF] flex items-center">Follow Us:</p>
                   <div className=" w-[120px] h-[26px] flex items-center justify-between">
-                    <a href="https://www.instagram.com/"><img src="./src/pictures/instagram.png" alt="" /></a>
-                    <a href="https://www.youtube.com/"><img src="./src/pictures/youtube.png" alt="" /></a>
-                    <a href="https://www.facebook.com/"><img src="./src/pictures/facebook.png" alt="" /></a>
-                    <a href="https://x.com/home?lang=tr"><img src="./src/pictures/X.png" alt="" /></a>
+                    <a href="https://www.instagram.com/"><img src="./public/pictures/instagram.png" alt="" /></a>
+                    <a href="https://www.youtube.com/"><img src="./public/pictures/youtube.png" alt="" /></a>
+                    <a href="https://www.facebook.com/"><img src="./public/pictures/facebook.png" alt="" /></a>
+                    <a href="https://x.com/home?lang=tr"><img src="./public/pictures/X.png" alt="" /></a>
                   </div>
               </div>
 
@@ -95,7 +95,7 @@ useEffect(() => {
                         className="w-[63px] font-[500] bg-[#FFFFFF] border-none flex items-center justify-between"
                       >
                         <p className="font-montserrat font-medium text-[14px] leading-[28px] tracking-[0.2px] text-[#252B42]">Shop</p> 
-                        <img src="./src/pictures/arrow.png" alt="" />
+                        <img src="./public/pictures/arrow.png" alt="" />
                       </button>
 
                       {isOpen && (
@@ -157,9 +157,9 @@ useEffect(() => {
                 <div className="w-[324px] h-[54px] flex justify-end items-center relative ">
                       <ul className="flex font-montserrat  text-[14px] leading-[24px] tracking-[0.2px] text-center text-[#23A6F0]">
                         <li className="w-[166px] font-[700]"><a >Login/Register</a></li>
-                        <li className="w-[46px]"><img src="./src/pictures/arama.png" alt="" /></li>
-                        <li className="w-[56px]"><img src="./src/pictures/sepet.png" alt="" /></li>
-                        <li className="w-[56px]"><img src="./src/pictures/fav.png" alt="" /></li>
+                        <li className="w-[46px]"><img src="./public/pictures/arama.png" alt="" /></li>
+                        <li className="w-[56px]"><img src="./public/pictures/sepet.png" alt="" /></li>
+                        <li className="w-[56px]"><img src="./public/pictures/fav.png" alt="" /></li>
                       </ul>
                 </div>
 

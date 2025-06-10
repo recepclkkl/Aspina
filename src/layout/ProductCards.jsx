@@ -2,27 +2,27 @@ function ProductCards() {
 
     const cards1 = [
         {
-            img:'./src/pictures/product1.jpg',
+            img:'./public/pictures/product1.jpg',
             name:'Graphic Design',
             descript:'English Department',
             price:'$16.48',
             salePrice:'$6.48'
         },
-        {img:'./src/pictures/product2.jpg',
-            name:'Graphic Design',
-            descript:'English Department',
-            price:'$16.48',
-            salePrice:'$6.48'
-        },
-        {
-            img:'./src/pictures/product3.jpg',
+        {img:'./public/pictures/product2.jpg',
             name:'Graphic Design',
             descript:'English Department',
             price:'$16.48',
             salePrice:'$6.48'
         },
         {
-            img:'./src/pictures/product4.jpg',
+            img:'./public/pictures/product3.jpg',
+            name:'Graphic Design',
+            descript:'English Department',
+            price:'$16.48',
+            salePrice:'$6.48'
+        },
+        {
+            img:'./public/pictures/product4.jpg',
             name:'Graphic Design',
             descript:'English Department',
             price:'$16.48',
@@ -32,27 +32,27 @@ function ProductCards() {
 
     const cards2 = [
         {
-            img:'./src/pictures/product5.jpg',
+            img:'./public/pictures/product5.jpg',
             name:'Graphic Design',
             descript:'English Department',
             price:'$16.48',
             salePrice:'$6.48'
         },
-        {img:'./src/pictures/product6.jpg',
-            name:'Graphic Design',
-            descript:'English Department',
-            price:'$16.48',
-            salePrice:'$6.48'
-        },
-        {
-            img:'./src/pictures/product7.jpg',
+        {img:'./public/pictures/product6.jpg',
             name:'Graphic Design',
             descript:'English Department',
             price:'$16.48',
             salePrice:'$6.48'
         },
         {
-            img:'./src/pictures/product8.jpg',
+            img:'./public/pictures/product7.jpg',
+            name:'Graphic Design',
+            descript:'English Department',
+            price:'$16.48',
+            salePrice:'$6.48'
+        },
+        {
+            img:'./public/pictures/product8.jpg',
             name:'Graphic Design',
             descript:'English Department',
             price:'$16.48',
