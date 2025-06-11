@@ -5,7 +5,7 @@ import ProductCards from "../layout/ProductCards"
 import ShopCards from "../layout/ShopCards"
 import ContainerFluid from "../layout/ContainerFluid"
 import DesktopBlog from "../layout/DesktopBlog"
-import Footer from "../layout/Footer"
+import Footer from "../layout/footer"
 
 function HomePage() {
 
