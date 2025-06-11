@@ -5,7 +5,7 @@ function containerFluid() {
 
   return (
     <>
-    <div className="w-[1440px] h-[682px]">
+    <div className="w-full h-[682px] flex justify-center ">
         <div className="w-[1440px] h-[682px] flex gap-[30px] justify-end">
 
             <div className="w-[704px] h-[682px] relative overflow-hidden">

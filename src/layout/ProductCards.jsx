@@ -62,7 +62,7 @@ function ProductCards() {
 
   return (
     <>
-    <div className="w-[1440px] h-[1625px] bg-[#FFFFFF] flex flex-col items-center">
+    <div className="w-full h-[1625px] bg-[#FFFFFF] flex flex-col items-center">
         <div className="w-[1124px] h-[1625px] flex flex-col items-center justify-around">
             <div className="w-[692px] h-[102px] flex flex-col justify-center items-center gap-[10px]">
                 <p className="font-montserrat font-[400] text-[20px] text-[#737373] leading-[30px] tracking-[0.2px]">Featured Products</p>
