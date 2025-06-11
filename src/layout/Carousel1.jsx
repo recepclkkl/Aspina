@@ -36,7 +36,8 @@ function Carousel1() {
   };
 
   return (
-    <div className="w-[1440px] h-[716px] rounded-[5px] border relative overflow-hidden border-none">
+    <div className="w-full h-full min-h-[716px] flex justify-center">
+      <div className='w-[1440px] h-full min-h-[716px] rounded-[5px] border relative overflow-hidden border-none'>
       {/* Arka plan resmi */}
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
@@ -48,7 +49,7 @@ function Carousel1() {
           animate="center"
           exit="exit"
           transition={{ duration: 0.6 }}
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          className="absolute top-0 left-0 w-full h-[716px] object-cover z-0"
           alt=""
         />
       </AnimatePresence>
@@ -95,15 +96,16 @@ function Carousel1() {
       </div>
 
       {/* Alt Göstergeler */}
-      <div className="w-[126px] h-[10px] flex relative top-[657px] left-1/2 -translate-x-1/2 z-1 ">
-        {images.map((_, i) => (
-          <div
-            key={i}
-            className={`h-[10px] w-[63px] transition-opacity duration-300 ${
-              index === i ? 'bg-[#FFFFFF] opacity-100' : 'bg-[#FFFFFF] opacity-50'
-            }`}
-          ></div>
-        ))}
+        <div className="w-[126px] h-[10px] flex relative top-[657px] left-1/2 -translate-x-1/2 z-1 ">
+          {images.map((_, i) => (
+            <div
+              key={i}
+              className={`h-[10px] w-[63px] transition-opacity duration-300 ${
+                index === i ? 'bg-[#FFFFFF] opacity-100' : 'bg-[#FFFFFF] opacity-50'
+              }`}
+            ></div>
+          ))}
+        </div>
       </div>
     </div>
   );

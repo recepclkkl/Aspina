@@ -3,7 +3,7 @@ function ShopCards() {
 
   return (
     <>
-    <div className="w-[1440px] h-[770px] flex justify-center bg-[#FAFAFA]">
+    <div className="w-full h-[770px] flex justify-center bg-[#FAFAFA]">
         <div className="w-[1124px] h-full flex justify-center items-center">
             <div className="w-[1050px] h-[610px] flex flex-col justify-between items-center">
                 <div className="w-[607px] h-[62px] flex flex-col justify-between items-center">

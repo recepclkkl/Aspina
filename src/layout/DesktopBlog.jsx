@@ -28,7 +28,7 @@ const cards=[
 
   return (
     <>
-    <div className="w-[1440px] h-[1044px] flex justify-center">
+    <div className="w-full h-[1044px] flex justify-center">
         <div className="w-[1050px] h-[1044px] flex flex-col gap-[80px] items-center justify-center">
             <div className="w-[692px] h-[134px] flex flex-col items-center gap-[10px]">
                 <p className="font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#23A6F0]" >Practice Advice</p>

@@ -3,66 +3,82 @@ function Footer() {
 
   return (
     <>
-    <div className="w-[1440px] h-[488px] flex flex-col justify-between bg-[#FFFFFF]">
-        <div className="w-[1440px] h-[142px] flex justify-center bg-[#FAFAFA]">
-            <div className="w-[1050px] h-[138px] flex items-center justify-between">
-                <p className="font-montserrat font-[700] text-[24px] leading-[32px] tracking-[0.1px] text-[#252B42]">Bandage</p>
-                <div className="w-[236px] h-[24px] flex gap-[20px] justify-center">
-                    <img src="./pictures/f.png" alt="" />
-                    <img src="./pictures/i.png" alt="" />
-                    <img src="./pictures/t.png" alt="" />
+    <div className="w-full h-[488px] flex justify-center bg-[#FFFFFF]">
+        <div className="w-full h-full flex flex-col justify-between bg-[#FFFFFF]">
+            <div className="w-full h-[142px] flex justify-center bg-[#FAFAFA]">
+                <div className="w-[1050px] h-[138px] flex items-center justify-between">
+                    <p className="font-montserrat font-[700] text-[24px] leading-[32px] tracking-[0.1px] text-[#252B42]">Bandage</p>
+                    <div className="w-[236px] h-[24px] flex gap-[20px] justify-center">
+                        <img src="./pictures/f.png" alt="" />
+                        <img src="./pictures/i.png" alt="" />
+                        <img src="./pictures/t.png" alt="" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr className="w-[1057px] border border-[1px] border-[#E6E6E6]" />
-        <div className="w-[1440px] h-[272px] flex justify-center">
-            <div className="w-[1050px] h-[270px] flex gap-[30px] justify-center">
-                <div className="w-[148px] h-[170px]">
-                    <p>Company Info</p>
-                    <p>About Us</p>
-                    <p>Carrier</p>
-                    <p>We are hiring</p>
-                    <p>Blog</p>
-                </div>
-                <div className="w-[152px] h-[170px]">
-                    <p>Legal</p>
-                    <p>About Us</p>
-                    <p>Carrier</p>
-                    <p>We Are Hiring</p>
-                    <p>Blog</p>
-                </div>
-                <div className="w-[148px] h-[170px]">
-                    <p>Features</p>
-                    <p>Business Marketing</p>
-                    <p>User Analytic</p>
-                    <p>Live Chat</p>
-                    <p>Unlimited Support</p>
-                </div>
-                <div className="w-[152px] h-[170px]">
-                    <p>Resources</p>
-                    <p>IOS & Android</p>
-                    <p>Watch a Demo</p>
-                    <p>Customers</p>
-                    <p>API</p>
-                </div>
-                <div className="w-[321px] h-[131px]">
-                    <p>Get In Touch</p>
-                    <input
-                    type="email"
-                    placeholder="Your Email"
-                    name="mail"
-                    id="mail"
-                    className="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <button>Subscribe</button>
-                    <p>Lore imp sum dolor Amit</p>
+            <hr className="w-full border border-[1px] border-[#E6E6E6]" />
+            <div className="w-full h-[272px] flex justify-center">
+                <div className="w-[1041px] h-[170px] flex gap-[30px] pt-[50px] pb-[50px] justify-between font-montserrat">
+                    <div className="w-[148px] h-[170px] flex flex-col gap-[20px]">
+                        <p className="font-[700] text-[16px] leading-[24px] tracking-[0.1px] text-[#252B42]">Company Info</p>
+                        <div className=" flex flex-col gap-[10px]">
+                            <p className="w-[119px] h-[24px] font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">About Us</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Carrier</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">We are hiring</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Blog</p>
+                        </div>
+                    </div>
+                    <div className="w-[148px] h-[170px] flex flex-col gap-[20px]">
+                        <p className="font-[700] text-[16px] leading-[24px] tracking-[0.1px] text-[#252B42]">Legal</p>
+                        <div className="flex flex-col gap-[10px]">
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">About Us</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Carrier</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">We Are Hiring</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Blog</p>
+                        </div>
+                    </div>
+                    <div className="w-[149px] h-[170px] flex flex-col gap-[20px]">
+                        <p className="font-[700] text-[16px] leading-[24px] tracking-[0.1px] text-[#252B42]">Features</p>
+                        <div className="flex flex-col gap-[10px]">
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Business Marketing</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">User Analytic</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Live Chat</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Unlimited Support</p>
+                            </div>
+                    </div>
+                    <div className="w-[152px] h-[170px] flex flex-col gap-[20px]">
+                        <p className="font-[700] text-[16px] leading-[24px] tracking-[0.1px] text-[#252B42]">Resources</p>
+                        <div className="flex flex-col gap-[10px]">
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">IOS & Android</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Watch a Demo</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">Customers</p>
+                            <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">API</p>
+                        </div>
+                    </div>
+                    <div className="w-[321px] h-[131px] flex flex-col gap-[20px]">
+                        <p className="font-[700] text-[16px] leading-[24px] tracking-[0.1px] font-montserrat">Get In Touch</p>
+                        <div className="w-[321px] h-[87px]">
+                            <div className="w-[321px] h-[58px]">
+                                <input
+                                    type="email"
+                                    placeholder="Your Email"
+                                    name="mail"
+                                    id="mail"
+                                    className="w-[198px] h-[55px] p-2 border border-[1px] rounded-[5px] bg-[#F9F9F9] text-[#E6E6E6] focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+                                    <button className="w-[115px] h-[58px] bg-[#23A6F0] text-[#FFFFFF] font-[400] text-[14px] leading-[28px] tracking-[0.2px] border border-r rounded-tr-[5px] rounded-br-[5px]">Subscribe</button>
+                            </div>
+                            <p className="font-[400] text-[12px] text-[#737373] leading-[28px] tracking-[0.2px] font-montserrat">Lore imp sum dolor Amit</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div className="w-[1440px] h-[74px]"></div>
+            <div className="w-full h-[74px] flex justify-center bg-[#FAFAFA]">
+                <div className="w-[1050px] h-[74px] flex items-center">
+                    <p className="font-[700] text-[14px] text-[#737373] leading-[24px] tracking-[0.2px] font-montserrat">Made With Love By Finland All Right Reserved </p>
+                </div>
+            </div>
+        </div>
     </div>
-      
     </>
   )
 }

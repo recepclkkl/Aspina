@@ -5,14 +5,14 @@ import ProductCards from "../layout/ProductCards"
 import ShopCards from "../layout/ShopCards"
 import ContainerFluid from "../layout/ContainerFluid"
 import DesktopBlog from "../layout/DesktopBlog"
-import Footer from "../layout/footer"
+import Footer from "../layout/Footer"
 
 function HomePage() {
 
   return (
     <>
-    <div className="absolute w-full min-h-screen flex justify-center bg-[#FFFFFF] left-[0] top-[0]">
-      <div className="w-full max-w-[1440px]">
+    <div className="absolute w-full min-h-screen flex flex-col items-center justify-center bg-[#FFFFFF] left-[0] top-[0]">
+      <div className="w-full h-auto">
         <Navbar />
         <Carousel1/>
         <ShopCards/>
