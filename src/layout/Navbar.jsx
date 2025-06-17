@@ -16,7 +16,7 @@ useEffect(() => {
 
   return (
     <>
-    <div className="w-full h-auto flex justify-center max-[980px]:max-w-screen max-[980px]:h-[328px]">
+    <div className="max-w-screen h-auto flex justify-center max-[980px]:max-w-screen max-[980px]:h-[328px]">
       <div className="w-full h-[136px] flex flex-col justify-between max-[980px]:w-full">
           {/* Dark navbar */}
           <div className="w-full h-[58px] bg-[#252B42] relative flex justify-center relative  max-[980px]:hidden">
@@ -65,9 +65,9 @@ useEffect(() => {
 
           {/* Light navbar */}
           <div className="w-full h-[58px] bg-[#FFFFFF] flex justify-center relative 
-          max-[980px]:w-[100vw] max-[980px]:h-[328px]  max-[980px]:flex max-[980px]:flex-col max-[980px]:justify-center">
+          max-[980px]:w-full max-[980px]:h-[328px]  max-[980px]:flex max-[980px]:flex-col max-[980px]:justify-center">
             <div className="w-[1440px] h-full flex justify-between relative 
-            max-[980px]:w-[100vw] max-[980px]:h-[58px] max-[980px]:justify-between ">
+            max-[980px]:w-full max-[980px]:h-[58px] max-[980px]:justify-between ">
               {/* Brand */}
                 <div className="w-[108px] h-[58px] flex justify-start max-[980px]:h-[58px]">
                   <a 

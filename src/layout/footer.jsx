@@ -4,7 +4,7 @@ function Footer() {
 
   return (
     <>
-    <div className="min-w-screen h-[488px] flex justify-center bg-[#FFFFFF] max-[980px]:w-full max-[980px]:h-auto">
+    <div className="max-w-screen h-[488px] flex justify-center bg-[#FFFFFF] max-[980px]:max-w-screen max-[980px]:h-auto">
         <div className="w-full h-full flex flex-col justify-between bg-[#FFFFFF]">
             <div className="w-full h-[142px] flex justify-center bg-[#FAFAFA]">
                 <div className="w-[1050px] h-[138px] flex items-center justify-between 
@@ -57,7 +57,7 @@ function Footer() {
                             <p className="font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">API</p>
                         </div>
                     </div>
-                    <div className="w-[321px] h-[131px] flex flex-col gap-[20px] max-[980px]:w-screen">
+                    <div className="w-[321px] h-[131px] flex flex-col gap-[20px] max-[980px]:w-full">
                         <p className="font-[700] text-[16px] leading-[24px] tracking-[0.1px] font-montserrat">Get In Touch</p>
                         <div className="w-[321px] h-[87px] max-[980px]:w-[80%]">
                             <div className="w-[321px] h-[58px] max-[980px]:w-full">

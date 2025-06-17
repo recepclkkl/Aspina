@@ -11,8 +11,9 @@ function HomePage() {
 
   return (
     <>
-    <div className="absolute w-full min-h-screen flex flex-col items-center justify-center bg-[#FFFFFF] left-[0] top-[0] max-[980px]:w-[100vw] max-[980px]:max-w-screen">
-      <div className="w-[100vw]  max-[980px]:w-[100vw]">
+    <div className="absolute max-w-screen w-full min-h-screen flex flex-col items-center justify-center bg-[#FFFFFF] left-[0] top-[0] 
+    max-[980px]:w-full">
+      <div className="w-screen  max-[980px]:w-full">
         <Navbar />
         <Carousel1/>
         <ShopCards/>

@@ -5,7 +5,7 @@ function containerFluid() {
 
   return (
     <>
-    <div className="w-full h-[682px] flex justify-center max-[980px]:max-w-screen max-[980px]:h-auto">
+    <div className="max-w-screen h-[682px] flex justify-center max-[980px]:max-w-screen max-[980px]:h-auto">
         <div className="w-[1440px] h-[682px] flex gap-[30px] justify-end 
         max-[980px]:w-full max-[980px]:h-full max-[980px]:flex-col-reverse max-[980px]:gap-[10px] max-[980px]:justify-end">
 
@@ -13,7 +13,7 @@ function containerFluid() {
             max-[980px]:w-full max-[980px]:h-full max-[980px]:justify-end">
                 <img 
                 className=" relative object-cover top-[-90px] left-[-137px] w-[725px] h-[774px] object-cover
-                max-[980px]:w-[100vw] max-[980px]:h-[100vw] max-[980px]:left-[-10px] max-[980px]:top-[-20px] max-[980px]:" 
+                max-[980px]:w-full max-[980px]:h-full max-[980px]:left-[-10px] max-[980px]:top-[-20px] max-[980px]:" 
                 src="./pictures/reds.png" alt="" />
             </div>
 

@@ -36,7 +36,7 @@ function Carousel1() {
   };
 
   return (
-    <div className="w-full h-full min-h-[716px] flex justify-center max-[980px]:max-w-screen max-[980px]:h-[328px] mt-[10px]">
+    <div className="max-w-screen h-full min-h-[716px] flex justify-center max-[980px]:max-w-screen max-[980px]:h-[328px] mt-[10px]">
       <div className="w-[1440px] h-full min-h-[716px] rounded-[5px] border relative overflow-hidden border-none
       max-[980px]:w-full ">
       {/* Arka plan resmi */}

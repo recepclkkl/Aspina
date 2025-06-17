@@ -29,7 +29,7 @@ const cards=[
 
   return (
     <>
-    <div className="w-full h-[1044px] flex justify-center 
+    <div className="max-w-screen h-[1044px] flex justify-center 
     max-[980px]:max-w-screen max-[980px]:h-auto  max-[980px]:pt-[50px]">
         <div className="w-[1050px] h-full flex flex-col gap-[50px] items-center justify-center
         max-[980px]:w-full  max-[980px]:h-auto">
@@ -49,7 +49,7 @@ const cards=[
                     <div key={index} className="w-[348px] h-[606px] 
                     max-[980px]:w-full max-[980px]:h-auto  max-[980px]:items-center">
                         <div className="w-[348px] h-[300px]  
-                        max-[980px]:flex max-[980px]:w-full max-[980px]:h-[70vw]  max-[980px]:justify-center">
+                        max-[980px]:flex max-[980px]:w-full max-[980px]:h-[50%]  max-[980px]:justify-center">
                             <img className="w-full h-full object-cover max-[980px]:w-[90%]" src={item.img} alt="" />
                         </div>
                         <div className="w-[348px] h-[306px] pt-[25px] pb-[35px] pr-[25px] pl-[25px] flex flex-col gap-[10px]
