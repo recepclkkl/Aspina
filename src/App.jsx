@@ -1,14 +1,20 @@
-import 'react-toastify/dist/ReactToastify.css';
-import { Route, Switch } from "react-router";
-import HomePage from './pages/HomePage';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./layout/Navbar";
+import Footer from "./layout/footer";
+import HomePage from "./pages/HomePage";
+import ShopPage from "./pages/ShopPage";
 
 function App() {
-
   return (
-    <>
-      <HomePage />
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/shop" component={ShopPage} />
+      </Switch>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;

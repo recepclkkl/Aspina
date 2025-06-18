@@ -1,8 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { Phone,Mail,Instagram,Youtube,Facebook,Twitter,Search,ShoppingCart,Heart,User, Menu  } from 'lucide-react';
+import { useLocation } from "react-router-dom";
+
 function Navbar() {
 const [isOpen, setIsOpen] = useState(false);
 const menuRef = useRef(null);
+const location = useLocation();
+
+const isShopPage = location.pathname.startsWith("/shop");
 
 useEffect(() => {
     function handleClickOutside(event) {
@@ -19,8 +24,8 @@ useEffect(() => {
     <div className="max-w-screen h-auto flex justify-center max-[980px]:max-w-screen max-[980px]:h-[328px]">
       <div className="w-full h-[136px] flex flex-col justify-between max-[980px]:w-full">
           {/* Dark navbar */}
-          <div className="w-full h-[58px] bg-[#252B42] relative flex justify-center relative  max-[980px]:hidden">
-            <div className="w-[1440px] h-full flex justify-between relative">
+          <div className={`w-full h-[58px] ${isShopPage ? "bg-[#23856D]" : "bg-[#252B42]"} relative flex justify-center max-[980px]:hidden`}>
+            <div className={`${isShopPage ? "w-[1050px]" : "w-full"} h-full flex justify-between relative`}>
               <div className="relative w-full flex justify-between ">
 
                 {/* Contact */}
@@ -66,8 +71,8 @@ useEffect(() => {
           {/* Light navbar */}
           <div className="w-full h-[58px] bg-[#FFFFFF] flex justify-center relative 
           max-[980px]:w-full max-[980px]:h-[328px]  max-[980px]:flex max-[980px]:flex-col max-[980px]:justify-center">
-            <div className="w-[1440px] h-full flex justify-between relative 
-            max-[980px]:w-full max-[980px]:h-[58px] max-[980px]:justify-between ">
+            <div className={`${isShopPage ? "w-[1050px]" : "w-full"} h-full flex justify-between relative 
+            max-[980px]:w-full max-[980px]:h-[58px] max-[980px]:justify-between `}>
               {/* Brand */}
                 <div className="w-[108px] h-[58px] flex justify-start max-[980px]:h-[58px]">
                   <a 

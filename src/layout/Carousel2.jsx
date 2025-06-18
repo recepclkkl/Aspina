@@ -108,7 +108,7 @@ function Carousel2() {
                   </div>
                   <div className='w-[510px] h-[685px] object-cover 
                   max-[980px]:w-full  max-[980px]:h-[300px] max-[980px]:flex max-[980px]:justify-center  max-[980px]:items-end'>
-                      <img className="w-[443px] h-[685px] max-[980px]:w-full max-[980px]:flex" src={slides[index].img} alt="#" />
+                      <img className="w-[443px] h-[685px] max-[980px]:w-full max-[980px]:h-auto max-[980px]:max-h-[800px] object-cover object-top max-[980px]:flex" src={slides[index].img} alt="#" />
                   </div>
               </div>
           </motion.div>
