@@ -25,7 +25,7 @@ useEffect(() => {
       <div className="w-full h-[136px] flex flex-col justify-between max-[980px]:w-full">
           {/* Dark navbar */}
           <div className={`w-full h-[58px] ${isShopPage ? "bg-[#23856D]" : "bg-[#252B42]"} relative flex justify-center max-[980px]:hidden`}>
-            <div className={`${isShopPage ? "w-[1050px]" : "w-full"} h-full flex justify-between relative`}>
+            <div className="w-[95%] h-full flex justify-center relative">
               <div className="relative w-full flex justify-between ">
 
                 {/* Contact */}
@@ -71,8 +71,8 @@ useEffect(() => {
           {/* Light navbar */}
           <div className="w-full h-[58px] bg-[#FFFFFF] flex justify-center relative 
           max-[980px]:w-full max-[980px]:h-[328px]  max-[980px]:flex max-[980px]:flex-col max-[980px]:justify-center">
-            <div className={`${isShopPage ? "w-[1050px]" : "w-full"} h-full flex justify-between relative 
-            max-[980px]:w-full max-[980px]:h-[58px] max-[980px]:justify-between `}>
+            <div className="w-[95%] h-full flex justify-between relative 
+            max-[980px]:w-full max-[980px]:h-[58px] max-[980px]:justify-between ">
               {/* Brand */}
                 <div className="w-[108px] h-[58px] flex justify-start max-[980px]:h-[58px]">
                   <a 

@@ -3,6 +3,7 @@ import Navbar from "./layout/Navbar";
 import Footer from "./layout/footer";
 import HomePage from "./pages/HomePage";
 import ShopPage from "./pages/ShopPage";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/shop" component={ShopPage} />
+        <Route path="/product" component={ProductPage} />
       </Switch>
       <Footer />
     </Router>
