@@ -1,3 +1,4 @@
+import { div } from "framer-motion/client";
 
 const data = [
   { page: "First", color: "#F3F3F3", text: "#BDBDBD" },
@@ -21,33 +22,32 @@ function Page({ selectedPage, setSelectedPage }) {
 
   return (
     <div className="max-w-screen h-auto flex justify-center">
-      <div className="w-[313px] h-[74px] flex justify-center gap-2">
+      <div className="w-[313px] h-[74px] flex justify-center gap-2 border border-[#BDBDBD] rounded-[5px] 
+      max-[980px]:w-[90%]">
         {data.map((item, index) => {
           const isSelected =
             item.page === selectedPage ||
             (item.page === "First" && selectedPage === "1");
 
-          // Sadece "First" tıklanmadığında gri arka plan
           const isFirst = item.page === "First";
           const firstInactive = isFirst && selectedPage !== "1";
 
           return (
-            <button
-              key={index}
-              onClick={() => changeProducts(item.page)}
-              className={`px-4 py-2 rounded-[5px] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px]
-                ${
-                  isSelected && !isFirst
-                    ? "bg-[#23A6F0] text-white"
-                    : firstInactive
-                    ? "bg-[#F3F3F3] text-[#BDBDBD]"
-                    : "bg-white text-[#23A6F0]"
-                }
-                hover:bg-[#23A6F0] hover:text-white`}
-                
-            >
-              {item.page}
-            </button>
+              <button
+                key={index}
+                onClick={() => changeProducts(item.page)}
+                className={`w-full px-4 py-2 rounded-l-[5px] rounded-r-[5px] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] border-none
+                  max-[980px]:w-full max-[980px]:h-full
+                  ${
+                    isSelected && !isFirst
+                      ? "bg-[#23A6F0] text-[#FFFFFF]"
+                      : firstInactive
+                      ? "bg-[#F3F3F3] text-[#BDBDBD]"
+                      : "bg-[#FFFFFF] text-[#23A6F0]"
+                  }
+                  hover:bg-[#23A6F0] hover:text-[#FFFFFF]`}>
+                {item.page}
+              </button>
           );
         })}
       </div>

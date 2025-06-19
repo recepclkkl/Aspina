@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const images = [
   './pictures/bg-1.jpg',
@@ -78,13 +79,10 @@ function Carousel1() {
             max-[980px]:w-[70%] max-[980px]:h-[70%] max-[980px]:text-[20px] max-[980px]:leading-[30px] max-[980px]:text-center">
               We know how large objects will act, but things on a small scale.
             </h4>
-            <a href="#" 
-            className=" flex justify-center text-[24px] border-none text-[#FFFFFF] leading-[32px] no-underline visited:text-[#FFFFFF] 
+            <Link className=" flex justify-center text-[24px] border-none text-[#FFFFFF] leading-[32px] no-underline visited:text-[#FFFFFF] 
             items-center w-[221px] h-[62px] bg-[#2DC071] font-montserrat font-[700] text-[14px] leading-[22px] tracking-[0.2px]
-            max-[980px]:w-[221px] max-[980px]:h-[70%] max-[980px]:justify-center">
-              SHOP NOW
-            </a>
-            
+            max-[980px]:w-[221px] max-[980px]:h-[70%] max-[980px]:justify-center" to="/shop">SHOP NOW</Link>
+                      
           </div>
         </motion.div>
       </AnimatePresence>

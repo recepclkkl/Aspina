@@ -190,6 +190,7 @@ useEffect(() => {
                       href="#">Pricing</a></li>
                       <li><a className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
                       href="#">Contact</a></li>
+                      
                     </ul>
                 </div>
             </div>

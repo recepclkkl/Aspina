@@ -60,15 +60,17 @@ function Footer() {
                     <div className="w-[321px] h-[131px] flex flex-col gap-[20px] max-[980px]:w-full">
                         <p className="font-[700] text-[16px] leading-[24px] tracking-[0.1px] font-montserrat">Get In Touch</p>
                         <div className="w-[321px] h-[87px] max-[980px]:w-[80%]">
-                            <div className="w-[321px] h-[58px] max-[980px]:w-full">
+                            <div className="w-full h-[58px] max-[980px]:w-full">
                                 <input
                                     type="email"
                                     placeholder="Your Email"
                                     name="mail"
                                     id="mail"
-                                    className="w-[198px] h-[55px] p-2 border border-[1px] rounded-[5px] bg-[#F9F9F9] text-[#E6E6E6] focus:outline-none focus:ring-2 focus:ring-blue-500 max-[980px]:w-[50%]"/>
+                                    className="w-[198px] h-[55px] p-2 border border-[1px] rounded-l-[5px] bg-[#F9F9F9] text-[#E6E6E6] focus:outline-none focus:ring-2 focus:ring-blue-500 
+                                    max-[980px]:w-[60%]"/>
                                     <button className="w-[115px] h-[58px] bg-[#23A6F0] text-[#FFFFFF] font-[400] 
-                                    text-[14px] leading-[28px] tracking-[0.2px] border border-r rounded-tr-[5px] rounded-br-[5px] max-[980px]:w-[30%]
+                                    text-[14px] leading-[28px] tracking-[0.2px] border rounded-r-[5px] rounded-br-[5px] 
+                                    max-[980px]:w-[30%] max-[980px]:min-w-[71px]
                                     ">Subscribe</button>
                             </div>
                             <p className="font-[400] text-[12px] text-[#737373] leading-[28px] tracking-[0.2px] font-montserrat">Lore imp sum dolor Amit</p>
@@ -80,7 +82,8 @@ function Footer() {
             <div className="w-full h-[74px] flex justify-center bg-[#FAFAFA]">
                 <div className="w-[1050px] h-[74px] flex items-center 
                 max-[980px]:w-full max-[980px]:h-auto max-[980px]:justify-center">
-                    <p className="font-[700] text-[14px] text-[#737373] leading-[24px] tracking-[0.2px] font-montserrat">Made With Love By Finland All Right Reserved </p>
+                    <p className="font-[700] text-[14px] text-[#737373] leading-[24px] tracking-[0.2px] font-montserrat
+                    max-[980px]:text-center max-[980px]:w-[70%]">Made With Love By Finland All Right Reserved </p>
                 </div>
             </div>
         </div>
