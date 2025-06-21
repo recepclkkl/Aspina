@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
@@ -117,10 +118,10 @@ function Carousel2() {
         {/* Geri / İleri Butonları */}
         <div className="absolute top-1/2 left-0 w-full flex justify-between items-center px-6 z-20">
           <button onClick={prevSlide} className="z-20 bg-transparent border-none">
-            <img src="../pictures/right.png" alt="Geri" />
+            <ChevronLeft />
           </button>
           <button onClick={nextSlide} className="z-20 bg-transparent border-none">
-            <img src="./pictures/left.png" alt="İleri" />
+            <ChevronRight />
           </button>
         </div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
   './pictures/bg-1.jpg',
@@ -91,10 +92,10 @@ function Carousel1() {
       <div className="absolute top-1/2 left-0 w-full flex justify-between items-center px-6 z-20
       max-[980px]:max-w-screen">
         <button onClick={prevImage} className="z-10 bg-[transparent] border-none">
-          <img src="./pictures/right.png" alt="Geri" />
+          <ChevronLeft />
         </button>
         <button onClick={nextImage} className="z-10 bg-[transparent] border-none">
-          <img src="./pictures/left.png" alt="İleri" />
+          <ChevronRight />
         </button>
       </div>
 
