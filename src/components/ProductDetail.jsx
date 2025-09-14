@@ -45,11 +45,13 @@ function ProductDetail() {
         }
   return (
     <>
-        <div className="w-full h-auto flex flex-col justify-center">
-            <div className="w-full h-[600px] flex justify-center">
-                <div className="w-[1050px] h-[550px] flex max-w-screen gap-[20px]">
-                    <div className="w-[50%] h-full flex flex-col items-center">
-                            <div className="max-h-[468px] min-h-[468px] max-w-[372px] min-w-[372px] rounded-[5px] border relative overflow-hidden border-none max-[980px]:w-full ">
+        <div className="w-full h-auto flex flex-col justify-center max-[660px]:w-max-full max-[660px]:mt-[20px]">
+            <div className="w-full h-[600px] flex justify-center max-[660px]:flex-col max-[660px]:h-auto items-center">
+                <div className="w-[1050px] h-[550px] flex fle max-w-screen gap-[20px] 
+                max-[660px]:w-[90%] max-[660px]:flex-col max-[660px]:h-auto max-[660px]:items-center">
+                    <div className="w-full h-full flex flex-col items-center max-[660px]:w-90% max-[660px]:h-90%">
+                            <div className="h-[90%] w-[90%] rounded-[5px] border relative overflow-hidden border-none flex justify-center items-center
+                            max-[660px]:w-90% max-[660px]:h-[468px] ">
                                 {/* Arka plan resmi */}
                                 <AnimatePresence initial={false} custom={direction}>
                                 <motion.img
@@ -77,7 +79,8 @@ function ProductDetail() {
                                 </div>
                                 
                             </div>
-                            <div className="max-w-[372px] min-w-[372px] h-[15%] flex gap-2 mt-2 border border-[#23A6F0]">
+                            <div className="max-w-[372px] h-[15%] flex gap-2 mt-2 
+                            max-[660px]:w-full max-[660px]:justify-center pt-[10px]">
                                 {images.map((item, i) => (
                                 <button key={i} onClick={() => handleChange(i)} className={`w-[80px] h-[80px] rounded overflow-hidden border-2 ${index === i ? 'border-[#23A6F0]' : 'border-transparent'}`}>
                                     <img className="w-full h-full object-cover" src={item} alt={`Thumbnail ${i + 1}`} />
@@ -86,9 +89,12 @@ function ProductDetail() {
                         </div>
                     </div>
 
-                    <div className="w-[50%] h-full">
-                        <div className="w-full h-[85%] flex flex-col justify-between pt-[20px] items-start">
-                            <h1 className="font-montserrat font-[400] text-[20px] text-[#252B42] leading-[30px] tracking-[0.2px]">Floating Phone</h1>
+                    <div className="w-[50%] h-full flex flex-col items-start gap-[20px]
+                    max-[660px]:w-[90%] max-[660px]:mt-[20px] max-[660px]:items-center">
+                        <div className="w-full h-[85%] flex flex-col justify-between pt-[20px] items-start
+                        max-[660px]:justify-center max-[660px]:items-left max-[660px]:gap-[10px]">
+                            <h1 className="font-montserrat font-[700] text-[20px] text-[#252B42] leading-[30px] tracking-[0.2px]">
+                                Floating Phone</h1>
                             <div>
                                 <Rating rating={4.3} reviewCount={123} />
                             </div>
@@ -143,35 +149,39 @@ function ProductDetail() {
                     </button>
                 </div>
                 <div className="w-full h-auto flex gap-[50px] justify-center ">
-                    <div className="w-[1050px] h-[499px] flex gap-[30px]">
-                        <div className="w-[30%]">
+                    <div className="w-[1050px] h-[499px] flex gap-[30px] 
+                    max-[660px]:flex-col max-[660px]:items-center max-[660px]:h-auto max-[660px]:w-[90%]">
+                        <div className="w-[30%] max-[660px]:w-full max-[660px]:h-auto">
                             <img className="w-full h-auto" src="/pictures/product1.jpg" alt="" />
                         </div>
-                        <div className="w-[35%] flex flex-col gap-[30px]">
+                        <div className="w-[35%] flex flex-col gap-[30px] 
+                        max-[660px]:w-full max-[660px]:h-auto">
                             <p className="font-montserrat font-[700] text-[24px] text-[#252B42] leading-[32px] tracking-[0.1px]">the quick fox jumps over </p>
                             <p className="font-montserrat font-[400] text-[14px] text-[#737373] leading-[20px] tracking-[0.1px]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met. <br /> <br />
                                 Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met. <br /> <br />
                                 Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.</p>
                         </div>
-                        <div className="w-[35%]  flex flex-col justify-start gap-[30px] font-montserrat font-[700] text-[14px] text-[#737373] leading-[24px] tracking-[0.2px]">
-                            <div className="flex flex-col gap-[30px]">
+                        <div className="w-[35%]  flex flex-col justify-start gap-[30px] font-montserrat font-[700] text-[14px] text-[#737373] leading-[24px] tracking-[0.2px]
+                        max-[660px]:w-full max-[660px]:h-auto">
+                            <div className="flex flex-col gap-[30px] ">
                                 <p className="font-montserrat font-[700] text-[24px] text-[#252B42] leading-[32px] tracking-[0.1px]">the quick fox jumps over </p>
                                 <ul className="flex flex-col gap-[10px]">
-                                    <li className="flex items-center"><ChevronRight />the quick fox jumps over the lazy dog</li>
-                                    <li className="flex items-center"><ChevronRight />the quick fox jumps over the lazy dog</li>
-                                    <li className="flex items-center"><ChevronRight />the quick fox jumps over the lazy dog</li>
-                                    <li className="flex items-center"><ChevronRight />the quick fox jumps over the lazy dog</li>
+                                    <li className="flex items-center font-[700]"><ChevronRight />the quick fox jumps over the lazy dog</li>
+                                    <li className="flex items-center font-[700]"><ChevronRight />the quick fox jumps over the lazy dog</li>
+                                    <li className="flex items-center font-[700]"><ChevronRight />the quick fox jumps over the lazy dog</li>
+                                    <li className="flex items-center font-[700]"><ChevronRight />the quick fox jumps over the lazy dog</li>
                                 </ul>
                             </div>
                             <div className="flex flex-col gap-[30px]">
                                 <p className="font-montserrat font-[700] text-[24px] text-[#252B42] leading-[32px] tracking-[0.1px]">the quick fox jumps over </p>
                                 <ul className="flex flex-col gap-[10px]">
-                                    <li className="flex items-center"><ChevronRight />the quick fox jumps over the lazy dog</li>
-                                    <li className="flex items-center"><ChevronRight />the quick fox jumps over the lazy dog</li>
-                                    <li className="flex items-center"><ChevronRight />the quick fox jumps over the lazy dog</li>
+                                    <li className="flex items-center font-[700]"><ChevronRight />the quick fox jumps over the lazy dog</li>
+                                    <li className="flex items-center font-[700]"><ChevronRight />the quick fox jumps over the lazy dog</li>
+                                    <li className="flex items-center font-[700]"><ChevronRight />the quick fox jumps over the lazy dog</li>
                                 </ul>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>

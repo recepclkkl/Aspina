@@ -9,7 +9,7 @@ function ProductPage() {
     return (
     <>
     <div className="max-w-screen flex flex-col items-center gap-[20px] ">
-        <div className="w-[95%] flex items-center pr-[10px] ">
+        <div className="w-[95%] flex items-center pr-[10px] pt-[20px]">
                     <Link className="no-underline font-montserrat font-[700] text-[14px] text-[#252B42] leading-[24px] tracking-[0.2px] text-center" to="/">Home</Link>
                     <ChevronRight />
                     <Link className="no-underline font-montserrat font-[700] text-[14px]  text-[#252B42] leading-[24px] tracking-[0.2px] text-center" to="/shop">Shop</Link>
@@ -19,9 +19,10 @@ function ProductPage() {
 
     </div>
     <ProductDetail/>
-    <div className="w-full flex flex-col items-center">
-        <div className="w-[1050px] flex flex-col gap-[30px]">
-            <p className="font-montserrat font-[700] text-[24px] text-[#252B42] leading-[32px] tracking-[0.2px]">BESTSELLER PRODUCTS</p>
+    <div className="w-full flex flex-col items-center max-[660px]:w-screen max-[660px]:pt-[50px]">
+        <div className="w-[1050px] flex flex-col gap-[30px] max-[660px]:w-full">
+            <p className="font-montserrat font-[700] text-[24px] text-[#252B42] leading-[32px] tracking-[0.2px]
+            max-[660px]:text-center">BESTSELLER PRODUCTS</p>
             <Products/>        
         </div>
         
