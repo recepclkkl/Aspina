@@ -93,10 +93,7 @@ useEffect(() => {
                       <li>
                         <a
                           className="text-[#737373] font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline"
-                          href="/"
-                        >
-                          Home
-                        </a>
+                          href="/">Home</a>
                       </li>
 
                       <li ref={menuRef}>
@@ -150,16 +147,16 @@ useEffect(() => {
                       </li>
 
                       <li>
-                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/About">About</a>
+                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/about">About</a>
                       </li>
                       <li>
-                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/Blog">Blog</a>
+                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/blog">Blog</a>
                       </li>
                       <li>
-                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/Contact">Contact</a>
+                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/contact">Contact</a>
                       </li>
                       <li>
-                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/Pages">Pages</a>
+                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/pages">Pages</a>
                       </li>
                     </ul>
                   </div>
@@ -189,9 +186,9 @@ useEffect(() => {
                       <li><a className="font-montserrat font-[600] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
                       href="/shop/product">Products</a></li>
                       <li><a className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      href="/Pricing">Pricing</a></li>
+                      href="/pricing">Pricing</a></li>
                       <li><a className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      href="/Contact">Contact</a></li>
+                      href="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
