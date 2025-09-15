@@ -78,7 +78,7 @@ function Navbar() {
                   <a 
                   className="w-[108px] h-[32px] relative top-[13px] font-montserrat font-[700] text-[24px] 
                   leading-[32px] tracking-[0.1px] text-[#252B42] no-underline max-[980px]:left-[10px]" 
-                  href="www.aspina.com">
+                  href="/">
                     Aspina
                   </a> 
                 </div>
