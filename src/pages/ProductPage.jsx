@@ -19,10 +19,11 @@ function ProductPage() {
 
     </div>
     <ProductDetail/>
-    <div className="w-full flex flex-col items-center max-[660px]:w-screen max-[660px]:pt-[50px]">
-        <div className="w-[1050px] flex flex-col gap-[30px] max-[660px]:w-full">
-            <p className="font-montserrat font-[700] text-[24px] text-[#252B42] leading-[32px] tracking-[0.2px]
-            max-[660px]:text-center">BESTSELLER PRODUCTS</p>
+    <div className="w-full flex flex-col items-center 
+    max-[660px]:w-screen max-[660px]:pt-[50px]">
+        <div className="w-screen flex flex-col gap-[30px] max-[660px]:w-full justify-center items-center">
+            <p className="w-[1050px] flex justify-start font-montserrat font-[700] text-[24px] text-[#252B42] leading-[32px] tracking-[0.2px] pt-[20px]
+            max-[980px]:text-center  max-[1055px]:w-screen  max-[1055px]:justify-center">BESTSELLER PRODUCTS</p>
             <Products/>        
         </div>
         

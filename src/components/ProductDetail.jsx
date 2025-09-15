@@ -45,10 +45,12 @@ function ProductDetail() {
         }
   return (
     <>
-        <div className="w-full h-auto flex flex-col justify-center max-[660px]:w-max-full max-[660px]:mt-[20px]">
-            <div className="w-full h-[600px] flex justify-center max-[660px]:flex-col max-[660px]:h-auto items-center">
-                <div className="w-[1050px] h-[550px] flex fle max-w-screen gap-[20px] 
-                max-[660px]:w-[90%] max-[660px]:flex-col max-[660px]:h-auto max-[660px]:items-center">
+        <div className="w-screen h-auto flex flex-col justify-center 
+        max-[660px]:w-screen max-[660px]:h-auto max-[660px]:mt-[20px]">
+            <div className="w-full h-[600px] flex justify-center 
+            max-[660px]:flex-col max-[660px]:h-auto items-center">
+                <div className="w-[1050px] h-[550px] flex 
+                max-w-screen gap-[20px] max-[660px]:w-[90%] max-[660px]:flex-col max-[660px]:h-auto max-[660px]:items-center max-[980px]:flex-row">
                     <div className="w-full h-full flex flex-col items-center max-[660px]:w-90% max-[660px]:h-90%">
                             <div className="h-[90%] w-[90%] rounded-[5px] border relative overflow-hidden border-none flex justify-center items-center
                             max-[660px]:w-90% max-[660px]:h-[468px] ">
@@ -119,9 +121,9 @@ function ProductDetail() {
                                 <button className="w-[30px] h-[30px] border border-none rounded-full bg-[#E77C40]"></button>
                                 <button className="w-[30px] h-[30px] border border-none rounded-full bg-[#252B42]"></button>
                             </div>
-                            <div className="flex gap-[30px]">
+                            <div className="flex gap-[30px] max-[660px]:flex-col max-[660px]:items-center max-[660px]:gap-[10px] max-[660px]:pt-[10px]">
                                 <button 
-                                className="w-auto h-[44px] bg-[#23A6F0] text-[#FFFFFF] border-[#858585] rounded-[5px] hover:bg-[#23856D] 
+                                className="w-[150px] h-[50px] bg-[#23A6F0] text-[#FFFFFF] border-[#858585] rounded-[5px] hover:bg-[#23856D] 
                                 font-montserrat font-[700] text-[14px] text-[#FFFFFF] hover:text-[#000000] leading-[24px] tracking-[0.2px]">
                                     Select Options
                                 </button>
@@ -149,13 +151,13 @@ function ProductDetail() {
                     </button>
                 </div>
                 <div className="w-full h-auto flex gap-[50px] justify-center ">
-                    <div className="w-[1050px] h-[499px] flex gap-[30px] 
-                    max-[660px]:flex-col max-[660px]:items-center max-[660px]:h-auto max-[660px]:w-[90%]">
+                    <div className="w-[1050px] h-auto flex gap-[30px] 
+                    max-[660px]:flex-col max-[660px]:items-center max-[660px]:h-auto max-[660px]:w-[80%]">
                         <div className="w-[30%] max-[660px]:w-full max-[660px]:h-auto">
                             <img className="w-full h-auto" src="/pictures/product1.jpg" alt="" />
                         </div>
                         <div className="w-[35%] flex flex-col gap-[30px] 
-                        max-[660px]:w-full max-[660px]:h-auto">
+                        max-[660px]:w-full max-[660px]:h-auto max-[660px]:">
                             <p className="font-montserrat font-[700] text-[24px] text-[#252B42] leading-[32px] tracking-[0.1px]">the quick fox jumps over </p>
                             <p className="font-montserrat font-[400] text-[14px] text-[#737373] leading-[20px] tracking-[0.1px]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met. <br /> <br />
                                 Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met. <br /> <br />

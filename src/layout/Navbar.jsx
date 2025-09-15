@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Phone,Mail,Instagram,Youtube,Facebook,Twitter,Search,ShoppingCart,Heart,User, Menu  } from 'lucide-react';
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 function Navbar() {
 const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ useEffect(() => {
 
   return (
     <>
-    <div className="max-w-screen h-auto flex justify-center max-[980px]:max-w-screen max-[980px]:h-[328px]">
+    <div className="max-w-screen h-auto flex justify-center max-[660px]:max-w-screen max-[660px]:h-[328px]">
       <div className="w-full h-[136px] flex flex-col justify-between max-[980px]:w-full">
           {/* Dark navbar */}
           <div className={`w-full h-[58px] ${isShopPage ? "bg-[#23856D]" : "bg-[#252B42]"} relative flex justify-center max-[980px]:hidden`}>
@@ -92,7 +93,7 @@ useEffect(() => {
                       <li>
                         <a
                           className="text-[#737373] font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline"
-                          href="/Home"
+                          href="/"
                         >
                           Home
                         </a>
@@ -179,18 +180,18 @@ useEffect(() => {
                   </div>  
                 </div>
             </div>
-            <div className="hidden max-[980px]:w-full max-[980px]:h-[270px] max-[980px]:flex max-[980px]:justify-center">
-                <div className="w-[123px] h-full">
-                    <ul className="w-full h-full items-center flex flex-col justify-between">
+            <div className="hidden max-[660px]:w-full max-[660px]:h-[270px] max-[660px]:flex max-[660px]:justify-center">
+                <div className="w-full h-full">
+                    <ul className="w-full h-full items-center flex justify-between 
+                    max-[660px]:flex-col max-[660px]:items-center max-[660px]:gap-[20px] max-[660px]:p-[10px] max-[660px]:justify-center">
                       <li><a className="font-montserrat font-[400] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]" 
-                      href="#">Home</a></li>
+                      href="/">Home</a></li>
                       <li><a className="font-montserrat font-[600] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      href="#">Product</a></li>
+                      href="/shop/product">Products</a></li>
                       <li><a className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      href="#">Pricing</a></li>
+                      href="/Pricing">Pricing</a></li>
                       <li><a className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      href="#">Contact</a></li>
-                      
+                      href="/Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

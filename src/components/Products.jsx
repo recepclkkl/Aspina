@@ -189,10 +189,10 @@ function Products({ selectedPage }) {
     <div className="max-w-screen h-auto justify-center flex mb-[30px]">      
         <div className="w-[1049px] flex justify-center">               
             <div className="w-full h-auto flex gap-[30px] justify-center flex-wrap
-            max-[980px]:w-full max-[980px]:h-auto max-[980px]:flex-row max-[980px]:flex-wrap max-[980px]:justify-center  max-[980px]:min-h-[2650px]  max-[980px]:gap-[20px]">
+            max-[660px]:w-full max-[660px]:h-auto max-[660px]:flex-row max-[660px]:flex-wrap max-[660px]:justify-center  max-[660px]:min-h-[2650px]  max-[660px]:gap-[20px]">
                 {visibleCards.map((item,index)=>(
                     <div key={index} className="w-[238px] h-[615px] flex flex-col 
-                    max-[980px]:w-[90%] max-[980px]:h-auto max-[980px]:items-center  max-[980px]:gap-[20px] hover:border hover:border-[#BDBDBD]">
+                    max-[660px]:w-[90%] max-[660px]:h-auto max-[660px]:items-center  max-[660px]:gap-[20px] hover:border hover:border-[#BDBDBD]">
                         <div className="w-[238px] h-[427px] max-[980px]:w-full max-[980px]:h-auto">
                             
                             <Link to="/shop/product"><img className="w-full h-full object-cover" src={item.img} alt="" /></Link>

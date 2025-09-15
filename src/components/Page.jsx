@@ -1,4 +1,4 @@
-import { div } from "framer-motion/client";
+
 
 const data = [
   { page: "First", color: "#F3F3F3", text: "#BDBDBD" },
