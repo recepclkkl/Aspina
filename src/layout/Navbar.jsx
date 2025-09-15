@@ -1,16 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 import { Phone,Mail,Instagram,Youtube,Facebook,Twitter,Search,ShoppingCart,Heart,User, Menu  } from 'lucide-react';
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function Navbar() {
-const [isOpen, setIsOpen] = useState(false);
-const menuRef = useRef(null);
-const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+  const location = useLocation();
 
-const isShopPage = location.pathname.startsWith("/shop");
+  const isShopPage = location.pathname.startsWith("/shop");
 
-useEffect(() => {
+  useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setIsOpen(false);
@@ -91,9 +90,9 @@ useEffect(() => {
                   <div className="relative w-[361px] items-center max-[980px]:hidden">
                     <ul className="font-[700] flex justify-between gap-[15px] text-sm items-center">
                       <li>
-                        <a
+                        <Link
                           className="text-[#737373] font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline"
-                          href="/">Home</a>
+                          to="/">Home</Link>
                       </li>
 
                       <li ref={menuRef}>
@@ -117,11 +116,11 @@ useEffect(() => {
                               </a>
                               <ul 
                                 className="w-[198px] h-[216px] space-y-1 text-sm flex flex-col justify-between">
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Bags</a></li>
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Belts</a></li>
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Cosmetics</a></li>
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Bags</a></li>
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Hats</a></li>
+                                <li><Link to="/shop/women/bags" className="no-underline text-[#737373] hover:text-[black]">Bags</Link></li>
+                                <li><Link to="/shop/women/belts" className="no-underline text-[#737373] hover:text-[black]">Belts</Link></li>
+                                <li><Link to="/shop/women/cosmetics" className="no-underline text-[#737373] hover:text-[black]">Cosmetics</Link></li>
+                                <li><Link to="/shop/women/shoes" className="no-underline text-[#737373] hover:text-[black]">Shoes</Link></li>
+                                <li><Link to="/shop/women/hats" className="no-underline text-[#737373] hover:text-[black]">Hats</Link></li>
                               </ul>
                             </div>
 
@@ -135,11 +134,11 @@ useEffect(() => {
                               </a>
                               <ul 
                                 className="w-[198px] h-[216px] space-y-1 text-sm flex flex-col justify-between ">
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Bags</a></li>
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Belts</a></li>
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Cosmetics</a></li>
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Bags</a></li>
-                                <li><a href="#" className="no-underline text-[#737373] hover:text-[black]">Hats</a></li>
+                                <li><Link to="/shop/men/bags" className="no-underline text-[#737373] hover:text-[black]">Bags</Link></li>
+                                <li><Link to="/shop/men/belts" className="no-underline text-[#737373] hover:text-[black]">Belts</Link></li>
+                                <li><Link to="/shop/men/cosmetics" className="no-underline text-[#737373] hover:text-[black]">Cosmetics</Link></li>
+                                <li><Link to="/shop/men/shoes" className="no-underline text-[#737373] hover:text-[black]">Shoes</Link></li>
+                                <li><Link to="/shop/men/hats" className="no-underline text-[#737373] hover:text-[black]">Hats</Link></li>
                               </ul>
                             </div>
                           </div>
@@ -147,16 +146,16 @@ useEffect(() => {
                       </li>
 
                       <li>
-                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/about">About</a>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/about">About</Link>
                       </li>
                       <li>
-                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/blog">Blog</a>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/blog">Blog</Link>
                       </li>
                       <li>
-                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/contact">Contact</a>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/contact">Contact</Link>
                       </li>
                       <li>
-                        <a className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" href="/pages">Pages</a>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/pages">Pages</Link>
                       </li>
                     </ul>
                   </div>
@@ -181,14 +180,14 @@ useEffect(() => {
                 <div className="w-full h-full">
                     <ul className="w-full h-full items-center flex justify-between 
                     max-[660px]:flex-col max-[660px]:items-center max-[660px]:gap-[20px] max-[660px]:p-[10px] max-[660px]:justify-center">
-                      <li><a className="font-montserrat font-[400] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]" 
-                      href="/">Home</a></li>
-                      <li><a className="font-montserrat font-[600] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      href="/shop/product">Products</a></li>
-                      <li><a className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      href="/pricing">Pricing</a></li>
-                      <li><a className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      href="/contact">Contact</a></li>
+                      <li><Link className="font-montserrat font-[400] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]" 
+                      to="/">Home</Link></li>
+                      <li><Link className="font-montserrat font-[600] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
+                      to="/shop/product">Products</Link></li>
+                      <li><Link className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
+                      to="/pricing">Pricing</Link></li>
+                      <li><Link className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
+                      to="/contact">Contact</Link></li>
                     </ul>
                 </div>
             </div>
