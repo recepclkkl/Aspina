@@ -4,7 +4,7 @@ function ContactHeader() {
     return(
         <>
         <div className="w-screen h-auto ">
-            <div className="w-[80%] h-[826px] flex justify-center items-center m-auto">
+            <div className="max-w-[2000px] w-[80%] h-[826px] flex justify-center items-center m-auto gap-[50px]">
                 <div className="w-full h-[500px] flex flex-col gap-[10px] justify-between">
                     <h1 className='font-montserrat font-[700] text-[16px] leading-[24px] tracking-[0.1px]'>Contact Us</h1>
                     <p className='font-montserrat font-[700] text-[58px] leading-[80px] tracking-[0.2px] text-[#252B42]'>Get in touch today!</p>
