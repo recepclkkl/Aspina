@@ -82,7 +82,8 @@ function Carousel1() {
             </h4>
             <Link className=" flex justify-center text-[24px] border-none text-[#FFFFFF] leading-[32px] no-underline visited:text-[#FFFFFF] 
             items-center w-[221px] h-[62px] bg-[#2DC071] font-montserrat font-[700] text-[14px] leading-[22px] tracking-[0.2px]
-            max-[980px]:w-[221px] max-[980px]:h-[70%] max-[980px]:justify-center" to="/shop">SHOP NOW</Link>
+            max-[980px]:w-[221px] max-[980px]:h-[70%] max-[980px]:justify-center" to="/shop" 
+            >SHOP NOW</Link>
                       
           </div>
         </motion.div>

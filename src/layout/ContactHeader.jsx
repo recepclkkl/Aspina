@@ -3,12 +3,19 @@ import { Phone,Mail,Instagram,Youtube,Facebook,Twitter,Search,ShoppingCart,Heart
 function ContactHeader() {
     return(
         <>
-        <div className="w-screen h-auto ">
-            <div className="max-w-[2000px] w-[80%] h-[826px] flex justify-center items-center m-auto gap-[50px]">
-                <div className="w-full h-[500px] flex flex-col gap-[10px] justify-between">
+        <div className="w-screen h-auto 
+        max-w-[660px]:w-screen max-[660px]:h-auto">
+            <div className="max-w-[2000px] w-[80%] h-[826px] flex justify-center items-center m-auto gap-[50px]
+            max-[660px]:w-screen max-[660px]:h-auto max-[660px]:flex-col max-[660px]:gap-[20px]">
+                <div className="w-full h-[500px] flex flex-col gap-[10px] justify-between
+                max-[660px]:w-full max-[660px]:h-auto max-[660px]:items-center max-[660px]:gap-[40px] max-[660px]:mt-[20px]">
                     <h1 className='font-montserrat font-[700] text-[16px] leading-[24px] tracking-[0.1px]'>Contact Us</h1>
-                    <p className='font-montserrat font-[700] text-[58px] leading-[80px] tracking-[0.2px] text-[#252B42]'>Get in touch today!</p>
-                    <p className='font-montserrat font-[400] text-[20px] leading-[30px] tracking-[0.2px] text-[#737373]'>We know how large objects will act, but things on a small scale</p>
+                    <p className='font-montserrat font-[700] text-[58px] leading-[80px] tracking-[0.2px] text-[#252B42]
+                    max-[660px]:text-[40px] max-[660px]:text-center max-[660px]:leading-[50px]'>Get in touch today!</p>
+                    <p className='font-montserrat font-[400] text-[20px] leading-[30px] tracking-[0.2px] text-[#737373]
+                        max-[660px]:max-w-[277px] max-[660px]:text-center max-[660px]:text-[20px]'>We know how large objects will act, but things on a small scale 
+                        <p className='hidden max-[660px]:block'>just do not act that way. </p> 
+                    </p>
                     <a className="no-underline text-[#252B42] font-montserrat font-[700] text-[24px] leading-[32px] tracking-[0.1px]" href="tel:+451215215">Phone; +451 215 215</a>
                     <a className="no-underline text-[#252B42] font-montserrat font-[700] text-[24px] leading-[32px] tracking-[0.1px]" href="fax:+451215215">Fax; +451 215 215</a>
 
@@ -20,7 +27,8 @@ function ContactHeader() {
                     </div>
                 </div>
                 <div className="w-full h-full flex justify-end items-center">
-                    <img className="w-full h-full object-cover" src="./pictures/contact.png" alt="" />
+                    <img className="w-full h-full object-cover min-w-[290px] 
+                    max-[660px]:min-h-[440px] max-[660px]:min-w-[50px]" src="./pictures/contact.png" alt="" />
                 </div>
             </div>
         </div>

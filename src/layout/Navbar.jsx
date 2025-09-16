@@ -22,9 +22,10 @@ function Navbar() {
   return (
     <>
     <div className="max-w-screen h-auto flex justify-center max-[660px]:max-w-screen max-[660px]:h-[328px]">
-      <div className="w-full h-[136px] flex flex-col justify-between max-[980px]:w-full">
+      <div className="w-full h-[136px] flex flex-col justify-between max-[660px]:w-full">
           {/* Dark navbar */}
-          <div className={`w-full h-[58px] ${isShopPage ? "bg-[#23856D]" : "bg-[#252B42]"} relative flex justify-center max-[980px]:hidden`}>
+          <div className={`w-full h-[58px] ${isShopPage ? "bg-[#23856D]" : "bg-[#252B42]"} relative flex justify-center
+           max-[1020px]:hidden`}>
             <div className="w-[95%] h-full flex justify-center relative">
               <div className="relative w-full flex justify-between ">
 
@@ -70,29 +71,29 @@ function Navbar() {
 
           {/* Light navbar */}
           <div className="w-full h-[58px] bg-[#FFFFFF] flex justify-center relative 
-          max-[980px]:w-full max-[980px]:h-[328px]  max-[980px]:flex max-[980px]:flex-col max-[980px]:justify-center">
+          max-[660px]:w-full max-[660px]:h-[328px]  max-[660px]:flex max-[660px]:flex-col max-[660px]:justify-center">
             <div className="w-[95%] h-full flex justify-between relative 
-            max-[980px]:w-full max-[980px]:h-[58px] max-[980px]:justify-between ">
+            max-[660px]:w-full max-[660px]:h-[58px] max-[660px]:justify-between ">
               {/* Brand */}
-                <div className="w-[108px] h-[58px] flex justify-start max-[980px]:h-[58px]">
-                  <a 
-                  className="w-[108px] h-[32px] relative top-[13px] font-montserrat font-[700] text-[24px] 
-                  leading-[32px] tracking-[0.1px] text-[#252B42] no-underline max-[980px]:left-[10px]" 
-                  href="/">
-                    Aspina
-                  </a> 
+                <div className="w-[108px] h-[58px] flex justify-start max-[660px]:h-[58px]">
+                  <Link
+                    className="w-[108px] h-[32px] relative top-[13px] font-montserrat font-[700] text-[24px] 
+                    leading-[32px] tracking-[0.1px] text-[#252B42] no-underline max-[660px]:left-[10px]" 
+                    to="/">
+                      Aspina
+                  </Link> 
                 </div>
 
                 {/* NavMenu */}
                 <div className="w-full h-[58px]  flex relative justify-between items-center 
-                max-[980px]:gap-[60px] max-[980px]:flex max-[980px]:justify-end">
+                max-[660px]:gap-[60px] max-[660px]:flex max-[660px]:justify-end">
 
-                  <div className="relative w-[361px] items-center max-[980px]:hidden">
+                  <div className="relative w-[361px] items-center max-[660px]:hidden">
                     <ul className="font-[700] flex justify-between gap-[15px] text-sm items-center">
                       <li>
                         <Link
                           className="text-[#737373] font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline"
-                          to="/">Home</Link>
+                          to="/" >Home</Link>
                       </li>
 
                       <li ref={menuRef}>
@@ -108,12 +109,12 @@ function Navbar() {
                           <div className="w-[396px] h-[272px] top-[40px] left-[62px] absolute flex z-20 border-solid border-[1px] border-t-0">
                             {/* Kadın */}
                             <div 
-                            className="w-[198px] h-[272px] flex flex-col font-[700] text-[14px] 
-                                leading-[24px] tracking-[0.2px] bg-[#FFFFFF]">
-                              <a href="#"
+                           className="w-[198px] h-[272px] flex flex-col font-[700] text-[14px] 
+                                  leading-[24px] tracking-[0.2px] bg-[#FFFFFF]">
+                              <Link to="/shop/women"
                                 className="w-[198px] h-[56px] text-[#252B42] no-underline hover:text-[gray]">
                                   Kadın
-                              </a>
+                              </Link>
                               <ul 
                                 className="w-[198px] h-[216px] space-y-1 text-sm flex flex-col justify-between">
                                 <li><Link to="/shop/women/bags" className="no-underline text-[#737373] hover:text-[black]">Bags</Link></li>
@@ -127,11 +128,11 @@ function Navbar() {
                             {/* Erkek */}
                             <div 
                             className="w-[198px] h-[272px] flex flex-col font-[700] text-[14px] 
-                                leading-[24px] tracking-[0.2px] bg-[#FFFFFF]">
-                              <a href="#"
-                                className="w-[198px] h-[56px] text-[#252B42] no-underline hover:text-[gray]">
-                                  Erkek
-                              </a>
+                                      leading-[24px] tracking-[0.2px] bg-[#FFFFFF]">
+                                  <Link to="/shop/men"
+                                    className="w-[198px] h-[56px] text-[#252B42] no-underline hover:text-[gray]">
+                                      Erkek
+                                  </Link>
                               <ul 
                                 className="w-[198px] h-[216px] space-y-1 text-sm flex flex-col justify-between ">
                                 <li><Link to="/shop/men/bags" className="no-underline text-[#737373] hover:text-[black]">Bags</Link></li>
@@ -160,14 +161,14 @@ function Navbar() {
                     </ul>
                   </div>
 
-                  <div className="w-[324px] h-[54px] flex justify-end items-center relative max-[980px]:w-[180px]">
-                        <ul className="flex font-montserrat  text-[14px] leading-[24px] tracking-[0.2px] text-center text-[#23A6F0] max-[980px]:hidden">
+                  <div className="w-[324px] h-[54px] flex justify-end items-center relative max-[660px]:w-[180px]">
+                        <ul className="flex font-montserrat  text-[14px] leading-[24px] tracking-[0.2px] text-center text-[#23A6F0] max-[660px]:hidden">
                           <li className="w-[166px] font-[700]"><a >Login/Register</a></li>
                           <li className="w-[46px]"><Search color="#23A6F0" size={16}/></li>
                           <li className="w-[56px]"><ShoppingCart color="#23A6F0" size={16}/></li>
                           <li className="w-[56px]"><Heart color="#23A6F0" size={16}/></li>
                         </ul>
-                        <ul className="hidden relative text-[#23A6F0] gap-[25px] max-[980px]:flex max-[980px]:right-[10px]">
+                        <ul className="hidden relative text-[#23A6F0] gap-[25px] max-[660px]:flex max-[660px]:right-[10px]">
                           <li><User color="black" size={24} /></li>
                           <li><Search color="black" size={24}/> </li>
                           <li><ShoppingCart color="black" size={24}/></li>
