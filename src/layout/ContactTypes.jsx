@@ -1,4 +1,4 @@
-import { CornerRightDown, Mail, MapPin, Phone, Redo } from "lucide-react";
+import {Mail, MapPin, Phone, Redo } from "lucide-react";
 
 
 function ContactTypes() {

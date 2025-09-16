@@ -71,7 +71,7 @@ function Navbar() {
 
           {/* Light navbar */}
           <div className="w-full h-[58px] bg-[#FFFFFF] flex justify-center relative 
-          max-[660px]:w-full max-[660px]:h-[328px]  max-[660px]:flex max-[660px]:flex-col max-[660px]:justify-center">
+          max-[660px]:w-full max-[660px]:h-[370px]  max-[660px]:flex max-[660px]:flex-col max-[660px]:justify-center">
             <div className="w-[95%] h-full flex justify-between relative 
             max-[660px]:w-full max-[660px]:h-[58px] max-[660px]:justify-between ">
               {/* Brand */}
@@ -177,7 +177,7 @@ function Navbar() {
                   </div>  
                 </div>
             </div>
-            <div className="hidden max-[660px]:w-full max-[660px]:h-[270px] max-[660px]:flex max-[660px]:justify-center">
+            <div className="hidden max-[660px]:w-full max-[660px]:h-[350px] max-[660px]:flex max-[660px]:justify-center">
                 <div className="w-full h-full">
                     <ul className="w-full h-full items-center flex justify-between 
                     max-[660px]:flex-col max-[660px]:items-center max-[660px]:gap-[20px] max-[660px]:p-[10px] max-[660px]:justify-center">
@@ -189,6 +189,9 @@ function Navbar() {
                       to="/pricing">Pricing</Link></li>
                       <li><Link className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
                       to="/contact">Contact</Link></li>
+                      <li><Link className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
+                      to="/team">Team</Link></li>
+                      
                     </ul>
                 </div>
             </div>
