@@ -52,8 +52,8 @@ function Carousel2() {
 
   return (
 
-    <div className="max-w-screen h-[709px] flex justify-center max-[980px]:max-w-screen max-[980px]:h-[709px] max-[980px]:mt-[20px] max-[980px]:h-[1236px]">
-      <div className="w-[1440px] h-[full] rounded-[5px] border relative overflow-hidden border-none 
+    <div className="w-screen h-auto flex justify-center ">
+      <div className="w-[1440px] h-[1100px] rounded-[5px] border relative overflow-hidden border-none 
       max-[980px]:w-full">
         {/* Arka plan renk */}
         <AnimatePresence initial={false} custom={direction}>

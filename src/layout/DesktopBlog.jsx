@@ -42,17 +42,17 @@ const cards=[
                 <p className="w-[469px] h-[40px] font-montserrat font-[400] text-[14px] leading-[20px] tracking-[0.2px] text-[#737373] text-center
                  max-[980px]:w-full  max-[980px]:h-auto" >Problems trying to resolve the conflict between <br />the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
-            <div className="w-[1045px] h-[606px] flex gap-[10px] justify-center
-            max-[980px]:max-w-screen max-[980px]:h-auto max-[980px]:flex-col max-[980px]:gap-[20px] max-[980px]:items-center">
+            <div className="w-[1045px] h-auto flex gap-[10px] justify-center
+            max-[980px]:w-screen max-[980px]:flex-col max-[980px]:gap-[30px] max-[980px]:items-center">
                 
                 {cards.map((item,index)=>(
-                    <div key={index} className="w-[348px] h-[606px] 
-                    max-[980px]:w-full max-[980px]:h-auto  max-[980px]:items-center">
+                    <div key={index} className="w-[348px] h-full 
+                    max-[980px]:w-full max-[980px]:h-[550px]  max-[980px]:items-center">
                         <div className="w-[348px] h-[300px]  
                         max-[980px]:flex max-[980px]:w-full max-[980px]:h-[50%]  max-[980px]:justify-center">
                             <img className="w-full h-full object-cover max-[980px]:w-[90%]" src={item.img} alt="" />
                         </div>
-                        <div className="w-[348px] h-[306px] pt-[25px] pb-[35px] pr-[25px] pl-[25px] flex flex-col gap-[10px]
+                        <div className="w-[348px] h-auto pt-[25px] pb-[35px] pr-[25px] pl-[25px] flex flex-col gap-[10px]
                         max-[980px]:w-[90%] max-[980px]:h-auto max-[980px]:translate-x-[5%]  max-[980px]:justify-center max-[980px]:items-center max-[980px]:p-[0] max-[980px]:gap-[20px]">
                             <div className="w-[160px] h-[16px] flex gap-[15px] max-[980px]:w-full">
                                 <a className="no-underline font-montserrat font-[400] text-[12px] leading-[16px] tracking-[0.2px] text-[#8EC2F2]" href="#">Google</a>

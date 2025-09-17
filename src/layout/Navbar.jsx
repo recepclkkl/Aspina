@@ -21,11 +21,11 @@ function Navbar() {
 
   return (
     <>
-    <div className="max-w-screen h-auto flex justify-center max-[660px]:max-w-screen max-[660px]:h-[328px]">
-      <div className="w-full h-[136px] flex flex-col justify-between max-[660px]:w-full">
+    <div className="max-w-screen h-auto flex justify-center max-[1020px]:h-[58px] max-[880px]:max-w-screen max-[880px]:h-[378px]">
+      <div className="w-full h-[136px] flex flex-col justify-between max-[880px]:w-full ">
           {/* Dark navbar */}
           <div className={`w-full h-[58px] ${isShopPage ? "bg-[#23856D]" : "bg-[#252B42]"} relative flex justify-center
-           max-[1020px]:hidden`}>
+           max-[1020px]:hidden `}>
             <div className="w-[95%] h-full flex justify-center relative">
               <div className="relative w-full flex justify-between ">
 
@@ -71,14 +71,14 @@ function Navbar() {
 
           {/* Light navbar */}
           <div className="w-full h-[58px] bg-[#FFFFFF] flex justify-center relative 
-          max-[660px]:w-full max-[660px]:h-[370px]  max-[660px]:flex max-[660px]:flex-col max-[660px]:justify-center">
+          max-[880px]:w-full max-[880px]:h-[370px]  max-[880px]:flex max-[880px]:flex-col max-[880px]:justify-center">
             <div className="w-[95%] h-full flex justify-between relative 
-            max-[660px]:w-full max-[660px]:h-[58px] max-[660px]:justify-between ">
+            max-[880px]:w-full max-[880px]:h-[58px] max-[880px]:justify-between ">
               {/* Brand */}
-                <div className="w-[108px] h-[58px] flex justify-start max-[660px]:h-[58px]">
+                <div className="w-[108px] h-[58px] flex justify-start max-[880px]:h-[58px]">
                   <Link
                     className="w-[108px] h-[32px] relative top-[13px] font-montserrat font-[700] text-[24px] 
-                    leading-[32px] tracking-[0.1px] text-[#252B42] no-underline max-[660px]:left-[10px]" 
+                    leading-[32px] tracking-[0.1px] text-[#252B42] no-underline max-[880px]:left-[10px]" 
                     to="/">
                       Aspina
                   </Link> 
@@ -86,9 +86,9 @@ function Navbar() {
 
                 {/* NavMenu */}
                 <div className="w-full h-[58px]  flex relative justify-between items-center 
-                max-[660px]:gap-[60px] max-[660px]:flex max-[660px]:justify-end">
+                max-[880px]:gap-[60px] max-[880px]:flex max-[880px]:justify-end">
 
-                  <div className="relative w-[361px] items-center max-[660px]:hidden">
+                  <div className="relative w-[361px] items-center max-[880px]:hidden">
                     <ul className="font-[700] flex justify-between gap-[15px] text-sm items-center">
                       <li>
                         <Link
@@ -147,28 +147,36 @@ function Navbar() {
                       </li>
 
                       <li>
-                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/about">About</Link>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/about">
+                        About</Link>
                       </li>
                       <li>
-                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/blog">Blog</Link>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/blog">
+                        Blog</Link>
                       </li>
                       <li>
-                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/contact">Contact</Link>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/contact">
+                        Contact</Link>
                       </li>
                       <li>
-                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/pages">Pages</Link>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/pages">
+                        Pages</Link>
+                      </li>
+                      <li>
+                        <Link className="text-[#737373] font-montserrat font-[700] text-[14px] leading-[24px] tracking-[0.2px] text-center no-underline" to="/team">
+                        Team</Link>
                       </li>
                     </ul>
                   </div>
 
-                  <div className="w-[324px] h-[54px] flex justify-end items-center relative max-[660px]:w-[180px]">
-                        <ul className="flex font-montserrat  text-[14px] leading-[24px] tracking-[0.2px] text-center text-[#23A6F0] max-[660px]:hidden">
+                  <div className="w-[324px] h-[54px] flex justify-end items-center relative max-[880px]:w-[180px]">
+                        <ul className="flex font-montserrat  text-[14px] leading-[24px] tracking-[0.2px] text-center text-[#23A6F0] max-[880px]:hidden">
                           <li className="w-[166px] font-[700]"><a >Login/Register</a></li>
                           <li className="w-[46px]"><Search color="#23A6F0" size={16}/></li>
                           <li className="w-[56px]"><ShoppingCart color="#23A6F0" size={16}/></li>
                           <li className="w-[56px]"><Heart color="#23A6F0" size={16}/></li>
                         </ul>
-                        <ul className="hidden relative text-[#23A6F0] gap-[25px] max-[660px]:flex max-[660px]:right-[10px]">
+                        <ul className="hidden relative text-[#23A6F0] gap-[25px] max-[880px]:flex max-[880px]:right-[10px]">
                           <li><User color="black" size={24} /></li>
                           <li><Search color="black" size={24}/> </li>
                           <li><ShoppingCart color="black" size={24}/></li>
@@ -177,10 +185,10 @@ function Navbar() {
                   </div>  
                 </div>
             </div>
-            <div className="hidden max-[660px]:w-full max-[660px]:h-[350px] max-[660px]:flex max-[660px]:justify-center">
-                <div className="w-full h-full">
+            <div className="hidden max-[880px]:w-full max-[880px]:h-[350px] max-[880px]:flex max-[880px]:justify-center">
+                <div className="w-full h-full flex justify-center items-center">
                     <ul className="w-full h-full items-center flex justify-between 
-                    max-[660px]:flex-col max-[660px]:items-center max-[660px]:gap-[20px] max-[660px]:p-[10px] max-[660px]:justify-center">
+                    max-[880px]:flex-col max-[880px]:items-center max-[880px]:gap-[20px] max-[880px]:p-[10px] max-[880px]:justify-center max-[880px]:text-center">
                       <li><Link className="font-montserrat font-[400] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]" 
                       to="/">Home</Link></li>
                       <li><Link className="font-montserrat font-[600] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"

@@ -52,9 +52,10 @@ function TeamMember() {
   return (
     <>
         <div className="w-screen h-auto flex flex-col justify-center items-center">
-            <h1 className="font-montserrat font-[700] text-[32px] text-[#252B42] leading-[40px] tracking-[0.1] mb-[50px]">Meet Our Team</h1>
-                <div className="w-[70%] h-full flex justify-center gap-[15px] grid grid-cols-3 grid-rows-3 gap-[15px]
-                max-[980px]:w-[90%] max-[980px]:flex-col max-[980px]:items-center max-[980px]:h-[1200px]  ">
+            <h1 className="font-montserrat font-[700] text-[32px] text-[#252B42] leading-[40px] tracking-[0.1] mb-[50px]
+            max-[680px]:text-[40px] max-[680px]:leading-[50px] max-[680px]:tracking-[0.2]">Meet Our Team</h1>
+                <div className="w-[70%] h-full justify-center gap-[15px] grid grid-cols-3 grid-rows-3 gap-[15px]
+                max-[680px]:w-[90%] max-[680px]:flex max-[680px]:flex-col max-[680px]:items-center max-[680px]:h-auto  ">
                     {data.map((items,index)=>(
                         <div key={index} className="w-full h-[300px] flex flex-col justify-center items-center mb-[30px]">
                             <div className="w-full h-[70%] mb-[20px] overflow-hidden flex justify-center items-center">
@@ -77,9 +78,11 @@ function TeamMember() {
 
             <div className="w-screen h-auto flex justify-center items-center mt-[50px] mb-[100px] ">
 
-                <div className="w-[70%] min-w-[560px] h-auto rounded-[12px] flex flex-col justify-center items-center gap-[30px]">
-                    <h2 className="font-montserrat font-[700] text-[40px] text-[#252B42] leading-[50px] tracking-[0.2]">Start your 14 days free trial</h2>
-                    <p className="w-[35%] text-center font-montserrat font-[400] text-[12px] text-[#737373] leading-[20px] tracking-[0.2]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent.</p>
+                <div className="w-[70%] h-auto rounded-[12px] flex flex-col justify-center items-center gap-[30px]">
+                    <h2 className="font-montserrat font-[700] text-[40px] text-[#252B42] leading-[50px] tracking-[0.2] text-center
+                    max-[680px]:text-[40px] max-[680px]:leading-[50px] max-[680px]:tracking-[0.1]">Start your 14 days free trial</h2>
+                    <p className="w-[35%] text-center font-montserrat font-[400] text-[12px] text-[#737373] leading-[20px] tracking-[0.2]
+                    max-[680px]:w-[80%] max-[680px]:text-[14px] max-[680px]:leading-[20px]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent.</p>
                     <button className="bg-[#23A6F0] text-[#FFFFFF] font-montserrat font-[700] text-[14px] leading-[22px]
                     tracking-[0.2px] rounded-[5px] w-[180px] h-[52px] border-none">Try it free now</button>
 

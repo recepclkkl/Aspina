@@ -9,8 +9,6 @@ function HomePage() {
 
   return (
     <>
-    <div className="relative max-w-screen w-full min-h-screen flex flex-col items-center justify-center bg-[#FFFFFF] left-[0] top-[0] 
-    max-[980px]:w-full">
       <div className="w-screen  max-[980px]:w-full">
         <Carousel1/>
         <ShopCards/>
@@ -19,7 +17,6 @@ function HomePage() {
         <ContainerFluid/>
         <DesktopBlog/>
       </div>
-    </div>
       
     </>
   )
