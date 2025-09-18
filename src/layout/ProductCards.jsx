@@ -3,9 +3,9 @@ import Products from "../components/Products"
 function ProductCards() {
   return (
     <>
-    <div className="max-w-screen h-[1625px] bg-[#FFFFFF] flex flex-col items-center mt-[50px]
+    <div className="max-w-screen h-auto bg-[#FFFFFF] flex flex-col items-center mt-[50px]
     max-[980px]:max-w-screen  max-[980px]:h-auto">
-        <div className="w-[1124px] h-[1625px] flex flex-col items-center justify-around
+        <div className="w-[1124px] h-auto flex flex-col items-center justify-around
         max-[980px]:w-full max-[980px]:h-full gap-[10px]">
             <div className="w-[692px] h-[102px] flex flex-col justify-center items-center gap-[10px] max-[980px]:w-[70%] max-[980px]:h-[200px] max-[980px]:justif">
                 <p className="font-montserrat font-[400] text-[20px] text-[#737373] leading-[30px] tracking-[0.2px] max-[980px]:w-full max-[980px]:text-center">

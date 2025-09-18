@@ -53,8 +53,8 @@ function Carousel2() {
   return (
 
     <div className="w-screen h-auto flex justify-center ">
-      <div className="w-[1440px] h-[1100px] rounded-[5px] border relative overflow-hidden border-none 
-      max-[980px]:w-full">
+      <div className="w-[1440px] h-[700px] rounded-[5px] border relative overflow-hidden border-none 
+      max-[980px]:w-full max-[980px]:h-[900px]">
         {/* Arka plan renk */}
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
@@ -81,8 +81,7 @@ function Carousel2() {
             exit="exit"
             transition={{ duration: 0.6 }}
             className="w-[975px] h-[709px] absolute top-[48px] left-[232px] gap-[80px] flex flex-col justify-center z-10 text-white
-            max-[980px]:left-[0] max-[980px]:max-w-screen max-[980px]:h-full  max-[980px]:top-[0]"
-          >
+            max-[980px]:left-[0] max-[980px]:max-w-screen max-[980px]:h-full  max-[980px]:top-[0]">
               <div className='w-full h-[709px] flex 
               max-[980px]:justify-between max-[980px]:flex-col max-[980px]:w-full max-[980px]:h-full'>
                   <div className="w-[509px] h-[432px] pt-[48px] pb-[48px] gap-[30px] flex flex-col z-1 justify-around
@@ -118,10 +117,10 @@ function Carousel2() {
         {/* Geri / İleri Butonları */}
         <div className="absolute top-1/2 left-0 w-full flex justify-between items-center px-6 z-20">
           <button onClick={prevSlide} className="z-20 bg-transparent border-none">
-            <ChevronLeft />
+            <ChevronLeft size={50} color='white'/>
           </button>
           <button onClick={nextSlide} className="z-20 bg-transparent border-none">
-            <ChevronRight />
+            <ChevronRight size={50} color='white'/>
           </button>
         </div>
 

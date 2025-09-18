@@ -187,9 +187,9 @@ function Products({ selectedPage }) {
   return (
     <>
     <div className="max-w-screen h-auto justify-center flex mb-[30px]">      
-        <div className="w-[1049px] flex justify-center">               
+        <div className="w-[1050px] flex justify-center">               
             <div className="w-full h-auto flex gap-[30px] justify-center flex-wrap
-            max-[660px]:w-full max-[660px]:h-auto max-[660px]:flex-row max-[660px]:flex-wrap max-[660px]:justify-center  max-[660px]:min-h-[2650px]  max-[660px]:gap-[20px]">
+            max-[660px]:w-full max-[660px]:flex-row max-[660px]:flex-wrap max-[660px]:justify-center  max-[660px]:h-auto  max-[660px]:gap-[20px]">
                 {visibleCards.map((item,index)=>(
                     <div key={index} className="w-[238px] h-[615px] flex flex-col 
                     max-[660px]:w-[90%] max-[660px]:h-auto max-[660px]:items-center  max-[660px]:gap-[20px] hover:border hover:border-[#BDBDBD]">

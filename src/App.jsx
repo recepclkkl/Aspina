@@ -7,6 +7,7 @@ import ProductPage from "./pages/ProductPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 import TeamPage from "./pages/TeamPage";
+import AboutPage from "./pages/AboutPage";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/shop" exact component={ShopPage} />
         <Route path="/contact" exact component={ContactPage} />
         <Route path="/team" exact component={TeamPage} />
+        <Route path="/about" exact component={AboutPage} />
       </Switch>
       <Footer />
     </Router>
