@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <>
-    <div className="max-w-screen h-auto flex justify-center max-[1020px]:h-[58px] max-[880px]:max-w-screen max-[880px]:h-[378px]">
+    <div className="max-w-screen h-auto flex justify-center max-[1020px]:h-[58px] max-[880px]:max-w-screen max-[880px]:h-[478px]">
       <div className="w-full h-[136px] flex flex-col justify-between max-[880px]:w-full ">
           {/* Dark navbar */}
           <div className={`w-full h-[58px] ${isShopPage ? "bg-[#23856D]" : "bg-[#252B42]"} relative flex justify-center
@@ -71,7 +71,7 @@ function Navbar() {
 
           {/* Light navbar */}
           <div className="w-full h-[58px] bg-[#FFFFFF] flex justify-center relative 
-          max-[880px]:w-full max-[880px]:h-[370px]  max-[880px]:flex max-[880px]:flex-col max-[880px]:justify-center">
+          max-[880px]:w-full max-[880px]:h-[470px]  max-[880px]:flex max-[880px]:flex-col max-[880px]:justify-center">
             <div className="w-[95%] h-full flex justify-between relative 
             max-[880px]:w-full max-[880px]:h-[58px] max-[880px]:justify-between ">
               {/* Brand */}
@@ -185,20 +185,23 @@ function Navbar() {
                   </div>  
                 </div>
             </div>
-            <div className="hidden max-[880px]:w-full max-[880px]:h-[350px] max-[880px]:flex max-[880px]:justify-center">
+            <div className="hidden max-[880px]:w-full max-[880px]:h-[450px] max-[880px]:flex max-[880px]:justify-center">
                 <div className="w-full h-full flex justify-center items-center">
                     <ul className="w-full h-full items-center flex justify-between 
                     max-[880px]:flex-col max-[880px]:items-center max-[880px]:gap-[20px] max-[880px]:p-[10px] max-[880px]:justify-center max-[880px]:text-center">
                       <li><Link className="font-montserrat font-[400] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]" 
                       to="/">Home</Link></li>
                       <li><Link className="font-montserrat font-[600] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
-                      to="/shop/product">Products</Link></li>
+                      to="/shop">Products</Link></li>
                       <li><Link className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
                       to="/pricing">Pricing</Link></li>
                       <li><Link className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
                       to="/contact">Contact</Link></li>
                       <li><Link className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
+                      to="/about">About</Link></li>
+                      <li><Link className="font-montserrat font-[550] text-[30px] leading-[45px] tracking-[0.2px] text-[#737373] no-underline visited:text-[#737373]"
                       to="/team">Team</Link></li>
+
                       
                     </ul>
                 </div>
