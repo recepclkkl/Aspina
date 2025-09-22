@@ -8,6 +8,9 @@ import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 import TeamPage from "./pages/TeamPage";
 import AboutPage from "./pages/AboutPage";
+import SignupPage from "./pages/SignupPage";
+
+
 function App() {
   return (
     <Router>
@@ -20,6 +23,7 @@ function App() {
         <Route path="/contact" exact component={ContactPage} />
         <Route path="/team" exact component={TeamPage} />
         <Route path="/about" exact component={AboutPage} />
+        <Route path="/signup" exact component={SignupPage} />
       </Switch>
       <Footer />
     </Router>

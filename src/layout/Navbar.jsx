@@ -171,7 +171,11 @@ function Navbar() {
 
                   <div className="w-[324px] h-[54px] flex justify-end items-center relative max-[880px]:w-[180px]">
                         <ul className="flex font-montserrat  text-[14px] leading-[24px] tracking-[0.2px] text-center text-[#23A6F0] max-[880px]:hidden">
-                          <li className="w-[166px] font-[700]"><a >Login/Register</a></li>
+                          <li className="w-[166px] font-[700] ">
+                            <Link className="no-underline text-[#23A6F0]" to="/signin">Login</Link>
+                              <a>/</a>
+                            <Link className="no-underline text-[#23A6F0]" to="/signup">Register</Link>
+                          </li>
                           <li className="w-[46px]"><Search color="#23A6F0" size={16}/></li>
                           <li className="w-[56px]"><ShoppingCart color="#23A6F0" size={16}/></li>
                           <li className="w-[56px]"><Heart color="#23A6F0" size={16}/></li>
