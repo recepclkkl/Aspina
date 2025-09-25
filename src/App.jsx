@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import TeamPage from "./pages/TeamPage";
 import AboutPage from "./pages/AboutPage";
 import SignupPage from "./pages/SignupPage";
+import SigninPage from "./pages/SigninPage";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/team" exact component={TeamPage} />
         <Route path="/about" exact component={AboutPage} />
         <Route path="/signup" exact component={SignupPage} />
+        <Route path="/signin" exact component={SigninPage} />
       </Switch>
       <Footer />
     </Router>
