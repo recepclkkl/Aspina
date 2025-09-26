@@ -3,11 +3,12 @@ import { useForm } from "react-hook-form";
 import instance from "../api/axios";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRoles } from "../store/clientActions";
+import { useHistory } from "react-router-dom"; // yönlendirme için
 
 function SignupPage() {
   const dispatch = useDispatch();
+  const history = useHistory();
 
-  // Redux store'dan roller
   const roles = useSelector((state) => state.client.roles);
 
   const {
@@ -35,12 +36,14 @@ function SignupPage() {
   const onSubmit = async (data) => {
     try {
       setSubmitting(true);
+
       let payload = {
         name: data.name,
         email: data.email,
         password: data.password,
         role_id: data.role_id,
       };
+
       if (selectedRole?.code === "store") {
         payload.store = {
           name: data.store_name,
@@ -49,10 +52,13 @@ function SignupPage() {
           bank_account: data.bank_account,
         };
       }
+
       const response = await instance.post("/signup", payload);
       console.log("Kayıt başarılı:", response.data);
       alert("Kayıt başarılı! Lütfen giriş yapın.");
-      window.history.back();
+
+      // Signup sonrası her zaman signin sayfasına yönlendir
+      history.push("/signin", { from: "/signup" });
     } catch (error) {
       console.error("Kayıt hatası:", error);
       alert("Kayıt sırasında bir hata oluştu.");
@@ -84,7 +90,7 @@ function SignupPage() {
               })}
               type="text"
             />
-            <span className="absolute left-[360px] w-[200px] h-[20px] text-[16px] text-[#FF0000]">
+            <span className="absolute left-[360px] w-[200px] h-[20px] text-[16px] text-red-500">
               {errors.name && <p>{errors.name.message}</p>}
             </span>
           </div>
@@ -104,7 +110,7 @@ function SignupPage() {
               })}
               type="email"
             />
-            <span className="absolute left-[360px] w-[200px] h-[20px] text-[16px] text-[#FF0000]">
+            <span className="absolute left-[360px] w-[200px] h-[20px] text-[16px] text-red-500">
               {errors.email && <p>{errors.email.message}</p>}
             </span>
           </div>
@@ -126,7 +132,7 @@ function SignupPage() {
               })}
               type="password"
             />
-            <span className="absolute left-[360px] w-[200px] h-[20px] text-[16px] text-[#FF0000]">
+            <span className="absolute left-[360px] w-[200px] h-[20px] text-[16px] text-red-500">
               {errors.password && <p>{errors.password.message}</p>}
             </span>
           </div>
@@ -144,7 +150,7 @@ function SignupPage() {
               })}
               type="password"
             />
-            <span className="absolute left-[360px] w-[200px] h-[20px] text-[16px] text-[#FF0000]">
+            <span className="absolute left-[360px] w-[200px] h-[20px] text-[16px] text-red-500">
               {errors.passwordConfirm && <p>{errors.passwordConfirm.message}</p>}
             </span>
           </div>
