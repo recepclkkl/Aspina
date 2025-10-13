@@ -1,12 +1,18 @@
 import { useState, useRef, useEffect } from "react";
 import { Phone,Mail,Instagram,Youtube,Facebook,Twitter,Search,ShoppingCart,Heart,User, Menu  } from 'lucide-react';
 import { useLocation, Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { logoutUser } from "../store/clientActions";
+import Gravatar from "react-gravatar";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const location = useLocation();
-
+  const dispatch = useDispatch();
+  const history = useHistory();
+  const user = useSelector((state) => state.client.user);
   const isShopPage = location.pathname.startsWith("/shop");
 
   useEffect(() => {
@@ -18,6 +24,11 @@ function Navbar() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const handleLogout = () => {
+    dispatch(logoutUser());
+    history.push("/signin");
+  };
 
   return (
     <>
@@ -171,12 +182,21 @@ function Navbar() {
 
                   <div className="w-[324px] h-[54px] flex justify-end items-center relative max-[880px]:w-[180px]">
                         <ul className="flex font-montserrat  text-[14px] leading-[24px] tracking-[0.2px] text-center text-[#23A6F0] max-[880px]:hidden">
-                          <li className="w-[166px] font-[700] ">
+                          {user ? (
+                            <>
+                              <li className="w-[300px] flex items-center gap-[10px] font-[700]">
+                                <Gravatar email={user.email} size={32} className="rounded-full" />
+                                <span>Hoş geldin, {user.name}</span>
+                                <button onClick={handleLogout}>Logout</button>
+                              </li>
+                            </>
+                          ) : (
+                            <li className="w-[166px] font-[700] ">
                             <Link 
                               className="no-underline text-[#23A6F0]" 
                               to={{
                                 pathname: "/signin",
-                                state: { from: location.pathname } // burası önemli
+                                state: { from: location.pathname }
                               }}
                             >
                               Login
@@ -186,12 +206,16 @@ function Navbar() {
                               className="no-underline text-[#23A6F0]" 
                               to={{
                                 pathname: "/signup",
-                                state: { from: location.pathname } // burası önemli
+                                state: { from: location.pathname }
                               }}
                             >
                               Register
                             </Link>
                           </li>
+                          )}
+
+                          
+
                           <li className="w-[46px]"><Search color="#23A6F0" size={16}/></li>
                           <li className="w-[56px]"><ShoppingCart color="#23A6F0" size={16}/></li>
                           <li className="w-[56px]"><Heart color="#23A6F0" size={16}/></li>

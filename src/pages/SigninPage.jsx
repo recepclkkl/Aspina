@@ -29,11 +29,11 @@ function SigninPage() {
         toast.success("Giriş başarılı!");
 
         if (location.state?.from === "/signup") {
-          history.replace("/"); // signup’tan gelindiyse anasayfa
+          history.push("/"); // signup’tan gelindiyse anasayfa
         } else if (location.state?.from) {
-          history.replace(location.state.from); // başka bir sayfadan gelindiyse o sayfaya
+          history.push(location.state.from); // başka bir sayfadan gelindiyse o sayfaya
         } else {
-          history.replace("/"); // fallback: anasayfa
+          history.push("/"); // fallback: anasayfa
         }
       } else {
         toast.error(result.message || "Giriş başarısız! Bilgilerinizi kontrol edin.");

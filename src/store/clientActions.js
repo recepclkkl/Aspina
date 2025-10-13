@@ -1,3 +1,4 @@
+// src/redux/clientAction.js
 import instance from "../api/axios";
 
 // Roller için thunk
@@ -12,23 +13,19 @@ export const fetchRoles = () => {
   };
 };
 
-// Login için thunk
 export const loginUser = (credentials, remember = false) => {
   return async (dispatch) => {
     try {
       const res = await instance.post("/login", credentials);
 
-      // 1. User bilgilerini store'a yaz
-      dispatch(setUser(res.data.user));
+      // burada res.data.user yerine res.data kullan
+      dispatch(setUser(res.data));
 
-      // 2. Token sakla
-      if (remember) {
-        localStorage.setItem("token", res.data.token);
-      } else {
-        sessionStorage.setItem("token", res.data.token);
-      }
+      const storage = remember ? localStorage : sessionStorage;
+      storage.setItem("token", res.data.token);
+      storage.setItem("user", JSON.stringify(res.data));
 
-      return { success: true, user: res.data.user };
+      return { success: true, user: res.data };
     } catch (error) {
       console.error("Login failed:", error);
       return { success: false, message: "Giriş başarısız! Bilgileri kontrol edin." };
@@ -36,7 +33,17 @@ export const loginUser = (credentials, remember = false) => {
   };
 };
 
-// Normal action creators
+
+
+export const logoutUser = () => (dispatch) => {
+  localStorage.removeItem("token");
+  localStorage.removeItem("user");
+  sessionStorage.removeItem("token");
+  sessionStorage.removeItem("user");
+
+  dispatch(clearUser());
+};
+
 export const setUser = (user) => ({
   type: "SET_USER",
   payload: user,
@@ -55,4 +62,8 @@ export const setTheme = (theme) => ({
 export const setLanguage = (language) => ({
   type: "SET_LANGUAGE",
   payload: language,
+});
+
+export const clearUser = () => ({
+  type: "CLEAR_USER",
 });

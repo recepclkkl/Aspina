@@ -10,9 +10,35 @@ import TeamPage from "./pages/TeamPage";
 import AboutPage from "./pages/AboutPage";
 import SignupPage from "./pages/SignupPage";
 import SigninPage from "./pages/SigninPage";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import instance from "./api/axios";
+import { setUser } from "./store/clientActions";
 
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+  const token = localStorage.getItem("token") || sessionStorage.getItem("token");
+
+  let savedUser = null;
+  try {
+    const savedUserString = localStorage.getItem("user") || sessionStorage.getItem("user");
+    if (savedUserString && savedUserString !== "undefined") {
+      savedUser = JSON.parse(savedUserString);
+    }
+  } catch (err) {
+    console.error("User parse hatası:", err);
+  }
+
+  if (token && savedUser) {
+    instance.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+    dispatch(setUser(savedUser));
+  }
+}, [dispatch]);
+
   return (
     <Router>
       <ScrollToTop />

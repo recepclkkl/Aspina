@@ -17,6 +17,8 @@ function clientReducer(state = initialState, action) {
       return { ...state, theme: action.payload };
     case "SET_LANGUAGE":
       return { ...state, language: action.payload };
+    case "CLEAR_USER":
+      return { ...state, user: null };
     default:
       return state;
   }
